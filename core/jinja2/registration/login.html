@@ -1,0 +1,14 @@
+<head>
+    <meta name="csrf-token" content="{{ csrf_token }}">
+</head>
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+  <h2>Login</h2>
+  <form method="post">
+    {{ csrf_input }}
+    {{ form.as_p() }}
+    <button type="submit">Login</button>
+  </form>
+{% endblock %}
