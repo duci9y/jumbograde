@@ -1,0 +1,10 @@
+{% extends 'layout.html.j2' %}
+
+{% block head %}
+{# This comment does not get ouput to the html. #}
+<!-- This comment does. Any html here would be output within the head block of the parent template. -->
+{% endblock %}
+
+{% block body %}
+<h1>Test page.</h1>
+{% endblock %}
