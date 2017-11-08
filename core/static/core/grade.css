@@ -1,0 +1,23 @@
+.collapsed {
+  display: block;
+}
+
+.sidebar {
+  height: 90vh;
+  -webkit-transition: margin 0.3s ease;
+  -moz-transition: margin 0.3s ease;
+  -o-transition: margin 0.3s ease;
+  transition: margin 0.3s ease;
+}
+
+#sidebar-right.collapsed {
+  margin-right: -16.7%;
+}
+
+#sidebar-left.collapsed {
+  margin-left: -16.7%;
+}
+
+.navbar {
+  height: 10vh;
+}
