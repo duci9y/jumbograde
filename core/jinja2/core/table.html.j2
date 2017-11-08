@@ -15,7 +15,7 @@
   </head>
   <body>
     {% block body %}
-    <h1>COMP11 Grades</h1>
+    <h1>COMP11 Grades for John Doe &lt;jdoe03&gt;</h1>
     <br>
     <h2>Homeworks</h2>
     <table class="table table-hover">
@@ -86,7 +86,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>
     $('.table > tbody > tr').click(function() {
-        location.href = "www.google.com";
+        var id = $(this).find('td:eq(0)').text();
+        location.href = id;
     });
     </script>
   </body>
