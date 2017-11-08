@@ -2,14 +2,12 @@
 
 {% block head %}
 {# This comment does not get ouput to the html. #}
-<!-- This comment does. Any html here would be output within the head block of the parent template. -->
 
-<link rel="stylesheet" href="static/core/login.css" />
-<link rel="stylesheet" type="text/css" href="{{ static('core/login.css') }}">
+<link rel="stylesheet" type="text/css" href="static/core/login.css"/>
 {% endblock %}
 
 {% block body %}
- <form>
+<form id="login-form">
     <div class="form-group">
         <label for="inputEmail">Email</label>
         <input type="email" class="form-control" id="inputEmail" placeholder="Email">
@@ -23,4 +21,5 @@
     </div>
     <button type="submit" class="btn btn-primary">Login</button>
 </form>
+
 {% endblock %}
