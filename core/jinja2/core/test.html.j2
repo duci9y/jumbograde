@@ -1,93 +1,11 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>testing</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends 'layout.html.j2' %}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+{% block head %}
+{# This comment does not get ouput to the html. #}
+<!-- This comment does. Any html here would be output within the head block of the parent template. -->
+<link rel="stylesheet" type="text/css" href="{{ static('core/test_styles.css') }}">
+{% endblock %}
 
-  {% block head %}{% endblock %}
-  </head>
-  <body>
-    {% block body %}
-    <h1>COMP11 Grades</h1>
-    <br>
-    <h2>Homeworks</h2>
-    <table class="table table-hover">
-      <thead class="thead-inverse">
-	<tr>
-	  <th>Assignment</th>
-	  <th>Timestamp</th>
-	  <th>Grade</th>
-	</tr>
-      </thead>
-      <tbody>
-	<tr>
-	  <td>HW1</td>
-	  <td>09/16/17 02:14 PM</td>
-	  <td>89</td>
-	</tr>
-	<tr>
-	  <td>HW2</td>
-	  <td>09/25/17 12:45 PM</td>
-	  <td>96</td>
-	</tr>
-	<tr>
-	  <td>HW3</td>
-	  <td>10/11/17 09:39 PM</td>
-	  <td>93</td>
-	</tr>
-      </tbody>
-    </table>
-    <br>
-    <h2>Labs</h2>
-    <table class="table table-hover">
-      <thead class="thead-inverse">
-	<tr>
-	  <th>Assignment</th>
-	  <th>Timestamp</th>
-	  <th>Grade</th>
-	</tr>
-      </thead>
-      <tbody>
-	<tr>
-	  <td>LAB1</td>
-	  <td>09/16/17 5:40 PM</td>
-	  <td>2</td>
-	</tr>
-	<tr>
-	  <td>LAB2</td>
-	  <td>09/23/17 5:42 PM</td>
-	  <td>2</td>
-	</tr>
-	<tr>
-	  <td>LAB3</td>
-	  <td>09/30/17 5:31 PM</td>
-	  <td>3</td>
-	</tr>
-	<tr>
-	  <td>LAB4</td>
-	  <td>10/05/17 4:59 PM</td>
-	  <td>2</td>
-	</tr>
-	<tr>
-	  <td>LAB5</td>
-	  <td>10/12/17 5:22 PM</td>
-	  <td>3</td>
-	</tr>	
-      </tbody>
-    </table>
-    {% endblock %}
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>
-    $('.table > tbody > tr').click(function() {
-        location.href = "www.google.com";
-    });
-    </script>
-  </body>
-</html>
+{% block body %}
+<h1>Test page.</h1>
+{% endblock %}
