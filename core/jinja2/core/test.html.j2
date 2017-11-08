@@ -4,8 +4,23 @@
 {# This comment does not get ouput to the html. #}
 <!-- This comment does. Any html here would be output within the head block of the parent template. -->
 <link rel="stylesheet" href="static/core/login.css" />
+
 {% endblock %}
 
 {% block body %}
-<h1>Test page</h1>
+<form>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
 {% endblock %}
