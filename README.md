@@ -75,3 +75,24 @@ restore it to `core/test.html.j2` before committing.
 We only have one app right now, so it is okay for `layout.html.j2` to be the
 only file in the root `jinja2` folder. Any templates you may create are most
 likely going inside app-specific template directories.
+
+## Static Files
+
+Static files common to more than one app go in the root `static` folder.
+
+Static files specific to apps must be placed according to the following
+directory structure:
+
+    <project_root>
+    |   <app_name>
+        |   static
+            |  <app_name>
+               |   <file_name>.css
+
+To include a static file in a template, you must not hardcode the URL. Use the
+`static` Jinja2 environment function instead:
+
+    <link rel="stylesheet" type="text/css" href="{{ static('core/test_styles.css') }}">
+
+The full path will be resolved at runtime, depending on what storage methods
+we end up using for our static files.
