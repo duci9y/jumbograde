@@ -2,12 +2,12 @@
   display: block;
 }
 
+/* Transitions are jumpy, not sure why */
 .sidebar {
-  height: 90vh;
-  -webkit-transition: margin 0.3s ease;
+  /*-webkit-transition: margin 0.3s ease;
   -moz-transition: margin 0.3s ease;
   -o-transition: margin 0.3s ease;
-  transition: margin 0.3s ease;
+  transition: margin 0.3s ease;*/
 }
 
 #sidebar-right.collapsed {
@@ -20,4 +20,9 @@
 
 .navbar {
   height: 10vh;
+}
+
+.row {
+  height: 90vh;
+  overflow-x: hidden;
 }
