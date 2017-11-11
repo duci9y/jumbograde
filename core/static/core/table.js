@@ -1,4 +1,4 @@
-/* JQuery */
+/*************************     JQuery     **************************/
 
 /* go to corresponding assignment scorecard */
 $('.table > tbody > tr').click(function() {
@@ -7,7 +7,7 @@ $('.table > tbody > tr').click(function() {
 });
 
 
-/* JavaScript */
+/*************************   JavaScript   **************************/
 
 /* go back to previous page */
 function go_back() {
