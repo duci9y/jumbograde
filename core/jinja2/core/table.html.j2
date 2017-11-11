@@ -19,14 +19,14 @@
   </head>
   <body>
     {% block body %}
-    <button type="button" class="btn btn-secondary" id="to_courses">Back to Courses</button>
+    <button type="button" class="btn btn-secondary" onclick="go_back()">Back to Courses</button>
     <br>
     <h1>COMP11 Grades for Jane Doe &lt;jdoe03&gt;</h1>
     <br>
     <p>
       <span>Below are your grades for your COMP11 assignments. To view the
-	scorecard and comments for a specific assignment, click on the row.</span>
-      <span>If you have general questions about the assignment, talk to TA during office hours!</span>
+	scorecard and comments for a specific assignment, click on its row.</span>
+      <span>If you have general questions about the assignment, talk to TA during office hours.</span>
       <span>If you think there was a mistake and would like a regrade, please
       contact an instructor or a graduate TA.</span>
     </p>
@@ -42,21 +42,15 @@
 	</tr>
       </thead>
       <tbody>
-	<tr>
-	  <td>HW1</td>
-	  <td>09/16/17 02:14 PM</td>
-	  <td>89</td>
-	</tr>
-	<tr>
-	  <td>HW2</td>
-	  <td>09/25/17 12:45 PM</td>
-	  <td>96</td>
-	</tr>
-	<tr>
-	  <td>HW3</td>
-	  <td>10/11/17 09:39 PM</td>
-	  <td>93</td>
-	</tr>
+      {% for assignment, tstamp, grade in [('HW1', '09/16/17 02:14 PM', 89),
+	                                   ('HW2', '09/25/17 12:45 PM', 96),
+	                                   ('HW3', '10/11/17 09:39 PM', 93)]%}
+        <tr>
+          <td>{{ assignment }}</td>
+	  <td>{{ tstamp }}</td>
+	  <td>{{ grade }}</td>
+        </tr>
+      {% endfor %}
       </tbody>
     </table>
     <br>
@@ -70,31 +64,39 @@
 	</tr>
       </thead>
       <tbody>
+      {% for assignment, tstamp, grade in [('LAB1', '09/16/17 05:40 PM', 2),
+	                                   ('LAB2', '09/23/17 05:42 PM', 2),
+	                                   ('LAB3', '09/30/17 05:31 PM', 3),
+	                                   ('LAB4', '10/05/17 04:59 PM', 2),
+	                                   ('LAB5', '10/12/17 05:22 PM', 3)]%}
+        <tr>
+          <td>{{ assignment }}</td>
+	  <td>{{ tstamp }}</td>
+	  <td>{{ grade }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    <br>
+    <h2>Exams</h2>
+    <table class="table table-hover">
+      <thead class="thead-inverse">
 	<tr>
-	  <td>LAB1</td>
-	  <td>09/16/17 5:40 PM</td>
-	  <td>2</td>
+	  <th>Exam</th>
+	  <th>Date</th>
+	  <th>Grade</th>
 	</tr>
-	<tr>
-	  <td>LAB2</td>
-	  <td>09/23/17 5:42 PM</td>
-	  <td>2</td>
-	</tr>
-	<tr>
-	  <td>LAB3</td>
-	  <td>09/30/17 5:31 PM</td>
-	  <td>3</td>
-	</tr>
-	<tr>
-	  <td>LAB4</td>
-	  <td>10/05/17 4:59 PM</td>
-	  <td>2</td>
-	</tr>
-	<tr>
-	  <td>LAB5</td>
-	  <td>10/12/17 5:22 PM</td>
-	  <td>3</td>
-	</tr>	
+      </thead>
+      <tbody>
+      {% for exam, date, grade in [('Midterm 1', '10/12/17', 88),
+	                           ('Midterm 2', '11/08/17', 91),
+	                           ('Final',     '12/05/17', 100)]%}
+        <tr>
+          <td>{{ exam }}</td>
+	  <td>{{ date }}</td>
+	  <td>{{ grade }}</td>
+        </tr>
+      {% endfor %}
       </tbody>
     </table>
     {% endblock %}
