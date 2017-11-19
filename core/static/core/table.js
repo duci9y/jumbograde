@@ -10,6 +10,6 @@ $('.table > tbody > tr').click(function() {
 /*************************   JavaScript   **************************/
 
 /* go back to previous page */
-function go_back() {
-    location.href = "../courses";
+function go_back_to_courses() {
+    location.href = "../../courses";
 }
