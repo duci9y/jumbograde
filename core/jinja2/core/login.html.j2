@@ -8,21 +8,37 @@
 
 {% block body %}
 
-<div class="container h-100" id="container">
-  <div class="row h-100 justify-content-center align-items-center">
-    <form>
-        <h4 class="form-signin-heading">Please Sign In</h4>
-      <div class="form-group">
-        <input type="email" class="form-control" id="email" placeholder="Username">
-      </div>
-      <div class="form-group">
-        <input type="password" class="form-control" id="pwd" placeholder="Password">
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox">Remember me</label>
-      </div>
-      <button id="btn" type="submit" class="btn btn-default">Submit</button>
-    </form>
+<div class="container">
+  <div id="top-buffer" class="row justify-content-md-center">
+    <div class="col-sm-3 text-center">
+    </div>
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="col-sm-3 text-center">
+      <h2 id="login-header"> Please login </h2>
+    </div>
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="col-sm-3">
+      <form>
+        <div class="form-group">
+          <label class="username-label">Username</label>
+          <input type="text" class="form-control" id="usernameInput" placeholder="Username">
+        </div>
+        <div class="form-group">
+          <label class="password-label">Password</label>
+          <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input">
+              Remember Me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-sm btn-block">Submit</button>
+
+      </form>
+    </div>
   </div>
 </div>
 

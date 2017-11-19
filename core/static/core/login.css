@@ -1,34 +1,20 @@
-body, html {
-        height: 100%;
-        display: grid;
-}
-.form-signin-heading {
-        padding-bottom: 10px;
-}
-
-.container {
-        width: 300px;
-        height: 300px;
-        position: absolute;
-        left: 50%;
-        top: 35%; 
-        margin-left: -150px;
-        margin-top: -150px;
+html, body {
         background-color: #f5f5f5;
 }
 
+#top-buffer {
+        margin-top: 8%;
+     
+}
 
 form {
-        margin-left: 30px;
-        margin-top: 40px;
-        margin-right: 30px;
-        margin-bottom: 25px;
+        position: fixed;
+        top: 25%;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+        border-width: thin;
+        border-style: solid;
+        border-color: #A9A9A9;
 }
-
-
-button {
-        color: white;
-        background-color: #87ceeb;
-}
-
 
