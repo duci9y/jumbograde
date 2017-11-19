@@ -3,15 +3,7 @@ span {
     padding-left: 5px;
 }
 
-p {
-    padding-left: 10px;
-}
-
-h1 {
-    padding-left: 10px;
-}
-
-h2 {
+p, h1, h2 {
     padding-left: 10px;
 }
 

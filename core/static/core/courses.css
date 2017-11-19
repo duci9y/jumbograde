@@ -1,7 +1,15 @@
 .btn-secondary {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.course {
     min-width: 150px;
+}
+
+.logout {
+    background-color: whitesmoke;
+    min-width: 100px;
 }
 
 .panel {

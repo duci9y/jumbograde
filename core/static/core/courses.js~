@@ -1,3 +1,0 @@
-function go_to_course() {
-    location.href = $(this)
-}
