@@ -1,0 +1,30 @@
+<!doctype html>
+<head>
+  <title>Jumbograde</title>
+
+  {% block head %}    
+    <link rel="stylesheet" type="text/css" href="{{ static('core/table.css') }}">
+  {% endblock %}
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+</head>
+<body>
+  {% block body %}
+  <h2>Welcome to JumboGrade! What class would you like to view?</h2>
+  <ul>
+    <li>COMP11</li>
+    <li>COMP15</li>
+    <li>COMP40</li>
+  </ul>
+
+
+  {% endblock %}
+
+</body>
+
+
+</html>

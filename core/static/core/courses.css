@@ -1,0 +1,14 @@
+.btn-secondary {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 150px;
+}
+
+.panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 375px;
+    text-align: center;
+}

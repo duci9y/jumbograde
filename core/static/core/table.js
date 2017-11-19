@@ -11,5 +11,5 @@ $('.table > tbody > tr').click(function() {
 
 /* go back to previous page */
 function go_back() {
-    location.href = '../';
+    location.href = "courses";
 }
