@@ -9,35 +9,27 @@
 {% block body %}
 
 <div class="container">
-  <div id="top-buffer" class="row justify-content-md-center">
-    <div class="col-sm-3 text-center">
-    </div>
-  </div>
-  <div class="row justify-content-md-center">
-    <div class="col-sm-3 text-center">
-      <h2 id="login-header"> Please login </h2>
-    </div>
-  </div>
-  <div class="row justify-content-md-center">
+  <div id="row" class="row justify-content-md-center">
     <div class="col-sm-3">
-      <form>
-        <div class="form-group">
-          <label class="username-label">Username</label>
-          <input type="text" class="form-control" id="usernameInput" placeholder="Username">
-        </div>
-        <div class="form-group">
-          <label class="password-label">Password</label>
-          <input type="password" class="form-control" id="passwordInput" placeholder="Password">
-        </div>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input type="checkbox" class="form-check-input">
-              Remember Me
-          </label>
-        </div>
-        <button type="submit" class="btn btn-primary btn-sm btn-block">Submit</button>
-
-      </form>
+      <div id="form-container" class="container">
+        <form>
+          <div class="form-group">
+            <label class="username-label">Username</label>
+            <input type="text" class="form-control" id="usernameInput" placeholder="Username">
+          </div>
+          <div class="form-group">
+            <label class="password-label">Password</label>
+            <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+                Remember Me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-sm btn-block">Submit</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>

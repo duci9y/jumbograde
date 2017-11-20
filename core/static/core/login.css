@@ -2,19 +2,15 @@ html, body {
         background-color: #f5f5f5;
 }
 
-#top-buffer {
-        margin-top: 8%;
-     
+#row {
+        margin-top: 23%;
 }
-
-form {
-        position: fixed;
-        top: 25%;
-        padding: 20px;
-        border-radius: 10px;
-        background-color: white;
-        border-width: thin;
+#form-container {
         border-style: solid;
+        background-color: white;
+        border-radius: 10px;
+        padding: 23px;
         border-color: #A9A9A9;
+        border-width: thin;
 }
 
