@@ -1,0 +1,11 @@
+.collapsed {
+  visibility: hidden;
+}
+
+.navbar {
+  height: 10vh;
+}
+
+.row {
+  height: 90vh;
+}
