@@ -1,0 +1,37 @@
+{% extends 'layout.html.j2' %}
+
+{% block head %}
+{# This comment does not get ouput to the html. #}
+
+<link rel="stylesheet" type="text/css" href="{{ static('core/login.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+      <div id="form-container" class="p-3 border border-secondary">
+        <form>
+          <div class="form-group">
+            <label for="usernameInput">Username</label>
+            <input type="text" class="form-control" id="usernameInput" placeholder="Username">
+          </div>
+          <div class="form-group">
+            <label for="passwordInput">Password</label>
+            <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+                Remember Me
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
