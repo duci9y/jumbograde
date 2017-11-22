@@ -11,15 +11,21 @@
 <div class="container">
   <div class="row justify-content-center mt-5">
     <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+      {% if form.errors %}
+        <div class="alert alert-danger mt-3" role="alert">
+          Incorrect username or password.
+        </div>
+      {% endif %}
       <div id="form-container" class="p-3 border border-secondary">
-        <form>
+        <form method="post" action="{{ url('login') }}">
+          {{ csrf_input }}
           <div class="form-group">
             <label for="usernameInput">Username</label>
-            <input type="text" class="form-control" id="usernameInput" placeholder="Username">
+            <input type="text" class="form-control" id="usernameInput" name="username">
           </div>
           <div class="form-group">
             <label for="passwordInput">Password</label>
-            <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+            <input type="password" class="form-control" id="passwordInput" name="password">
           </div>
           <div class="form-check">
             <label class="form-check-label">
@@ -27,6 +33,7 @@
                 Remember Me
             </label>
           </div>
+
           <button type="submit" class="btn btn-primary btn-block">Login</button>
         </form>
       </div>
