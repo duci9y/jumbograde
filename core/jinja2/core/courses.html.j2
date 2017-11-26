@@ -1,46 +1,19 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <title>JumboGrade</title>
+{% extends 'layout.html.j2' %}
+{% block head %}
+<link rel="stylesheet" href="{{ static('core/courses.css') }}">
+{% endblock %}
 
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="{{ static('core/courses.css') }}">
-  
-  {% block head %}
-  {% endblock %}
-
-</head>
-<body>
-  {% block body %}
-  <div class="panel panel-default">
-    <div class="panel-heading"><b>Welcome to JumboGrade!</b></div>
-    <div class="panel-body">
-      Which class would you like to view?<br>
-      <button type="button" class="btn btn-secondary course">COMP11</button><br>
-      <button type="button" class="btn btn-secondary course">COMP15</button><br>
-      <button type="button" class="btn btn-secondary course">COMP40</button><br>
-      <button type="button" class="btn btn-secondary logout">Logout</button>
-
-    </div>
+{% block body %}
+<div class="card text-center mx-auto" id="course_select">
+  <div class="card-header">
+    <strong>Welcome to JumboGrade!</strong>
   </div>
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  
-  <script src="{{ static('core/courses.js') }}" type="text/javascript"></script>
-
-  {% endblock %}
-
-</body>
-
-</html>
+  <div class="card-block"><br>
+    <p class="card-text">Which class would you like to view?<p>
+    <a class="btn btn-light course" href="../COMP11/view_grades" role="button">COMP11</a><br>
+    <a class="btn btn-light course" href="../COMP15/view_grades" role="button">COMP15</a><br>
+    <a class="btn btn-light course" href="../COMP40/view_grades" role="button">COMP40</a><br>
+    <a class="btn btn-light logout" href="../login" role="button">Logout</a>
+  </div>
+</div>
+{% endblock %}

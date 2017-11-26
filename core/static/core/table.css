@@ -1,19 +1,27 @@
-span {
-    display: block;
-    padding-left: 5px;
+#student-landing {
+    margin-top: 1rem;
 }
 
-p, h1, h2 {
-    padding-left: 10px;
-}
-
-.btn-secondary {
-    margin-top: 10px;
+.back {
     margin-bottom: 10px;
-    margin-left: 10px;
+    background-color: white;
+    border-color: lightgrey;
 }
 
-table {
-    table-layout: fixed;
+.grade-table {
     word-wrap: break-word;
+}
+
+.grade-head {
+    background-color: #333333;
+    color: white;
+}
+
+.table-row-clickable {
+  color: inherit;
+}
+
+.table-row-clickable:hover {
+  color: inherit;
+  text-decoration: inherit;
 }

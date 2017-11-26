@@ -1,114 +1,132 @@
-<!doctype html>
-<html lange="en">
-<head>
-    <title>COMP11 Grades</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends 'layout.html.j2' %}
+{% block head %}
+<link rel="stylesheet" href="{{ static('core/table.css') }}">
+{% endblock %}
 
-    <link rel="stylesheet" type="text/css" href="{{ static('core/table.css') }}">
+{% block body %}
+<div class="container-fluid" id="student-landing">
+  <a class="btn btn-light back" href="../../courses" role="button">Back to Courses</a>
+  <br>
+  <h1>COMP11 Grades for Jane Doe &lt;jdoe03&gt;</h1>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+  <br>
+  <p>
+    Below are your grades for your COMP11 assignments. For homeworks and labs,
+    click on a row to view the scorecard and comments for that assignment.<br>
+    If you have general questions about the assignment, talk to a TA
+  	during office hours.<br>
+    If you think there was a mistake and would like a regrade, please
+    contact an instructor or a graduate TA.<br>
+  </p>
+  <p><i>Tokens Available:</i> 1</p>
+  <br>
+  <h2>Homeworks</h2>
+  <table class="table table-hover grade-table">
+    <thead class="grade-head">
+      <tr class="row m-0">
+        <th class="d-inline-block col-4">Assignment</th>
+        <th class="d-inline-block col-5">Timestamp</th>
+        <th class="d-inline-block col-3">Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for assignment, tstamp, grade in [('HW1', '09/16/17 02:14 PM', 89),
+                                         ('HW2', '09/25/17 12:45 PM', 96),
+  	                                     ('HW3', '10/11/17 09:39 PM', 93)] %}
+      <tr class="row m-0">
+        <td class="p-0 d-inline-block col-4">
+          <a class="p-2 d-block table-row-clickable" href="{{ assignment }}">{{ assignment }}</a>
+        </td>
+        <td class="p-0 d-inline-block col-5">
+          <a class="p-2 d-block table-row-clickable" href="{{ assignment }}">{{ tstamp }}</a>
+        </td>
+        <td class="p-0 d-inline-block col-3">
+          <a class="p-2 d-block table-row-clickable" href="{{ assignment }}">{{ grade }} / 100</a>
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <br>
+  <h2>Labs</h2>
+  <table class="table table-hover grade-table">
+    <thead class="grade-head">
+      <tr class="row m-0">
+        <th class="d-inline-block col-4">Assignment</th>
+        <th class="d-inline-block col-5">Timestamp</th>
+        <th class="d-inline-block col-3">Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for assignment, tstamp, grade in [('LAB1', '09/16/17 05:40 PM', 2),
+  	                                     ('LAB2', '09/23/17 05:42 PM', 2),
+  	                                     ('LAB3', '09/30/17 05:31 PM', 3),
+  	                                     ('LAB4', '10/05/17 04:59 PM', 2),
+  	                                     ('LAB5', '10/12/17 05:22 PM', 3)] %}
+      <tr class="row m-0">
+        <td class="p-0 d-inline-block col-4">
+          <a class="p-2 d-block table-row-clickable" href="{{ assignment }}">{{ assignment }}</a>
+        </td>
+        <td class="p-0 d-inline-block col-5">
+          <a class="p-2 d-block table-row-clickable" href="{{ assignment }}">{{ tstamp }}</a>
+        </td>
+        <td class="p-0 d-inline-block col-3">
+          <a class="p-2 d-block table-row-clickable" href="{{ assignment }}">{{ grade }} / 100</a>
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <br>
+  <h2>Quizzes</h2>
+  <table class="table table-hover grade-table">
+    <thead class="grade-head">
+      <tr class="row m-0">
+        <th class="d-inline-block col-4">Assignment</th>
+        <th class="d-inline-block col-5">Timestamp</th>
+        <th class="d-inline-block col-3">Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for assignment, tstamp, grade in [('Quiz1', '09/16/17 04:34 PM', 80),
+                                         ('Quiz2', '09/23/17 04:40 PM', 80)] %}
+      <tr class="row m-0">
+        <td class="d-inline-block col-4">{{ assignment }}</td>
+        <td class="d-inline-block col-5">{{ tstamp }}</td>
+        <td class="d-inline-block col-3">{{ grade }} / 100</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <br>
+  <h2>Exams</h2>
+  <table class="table table-hover grade-table">
+    <thead class="grade-head">
+      <tr class="row m-0">
+        <th class="d-inline-block col-4">Exam</th>
+        <th class="d-inline-block col-5">Date</th>
+        <th class="d-inline-block col-3">Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for exam, date, grade in [('Midterm 1', '10/12/17', 88),
+                                 ('Midterm 2', '11/08/17', 91),
+                                 ('Final',     '12/05/17', 100)] %}
 
-    {% block head %}    
-    {% endblock %}
+      <tr class="row m-0">
+        <td class="p-0 d-inline-block col-4">
+          <a class="p-2 d-block table-row-clickable" href="{{ exam }}">{{ exam }}</a>
+        </td>
+        <td class="p-0 d-inline-block col-5">
+          <a class="p-2 d-block table-row-clickable" href="{{ exam }}">{{ date }}</a>
+        </td>
+        <td class="p-0 d-inline-block col-3">
+          <a class="p-2 d-block table-row-clickable" href="{{ exam }}">{{ grade }} / 100</a>
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
 
-</head>
-  
-<body>
-    {% block body %}
-    <button type="button" class="btn btn-secondary" onclick="go_back_to_courses()">
-      Back to Courses</button>
-    <br>
-    <h1>COMP11 Grades for Jane Doe &lt;jdoe03&gt;</h1>
-    <br>
-    <p>
-      <span>Below are your grades for your COMP11 assignments. Click on a row
-	to view the scorecard and comments for that assignment.</span>
-      <span>If you have general questions about the assignment, talk to TA
-	during office hours.</span>
-      <span>If you think there was a mistake and would like a regrade, please
-        contact an instructor or a graduate TA.</span>
-    </p>
-    <p><i>Tokens Available:</i> 1</p>
-    <br>
-    <h2>Homeworks</h2>
-    <table class="table table-hover">
-      <thead class="thead-inverse">
-	<tr>
-	  <th>Assignment</th>
-	  <th>Timestamp</th>
-	  <th>Grade</th>
-	</tr>
-      </thead>
-      <tbody>
-      {% for assignment, tstamp, grade in [('HW1', '09/16/17 02:14 PM', 89),
-	                                   ('HW2', '09/25/17 12:45 PM', 96),
-	                                   ('HW3', '10/11/17 09:39 PM', 93)] %}
-        <tr>
-          <td>{{ assignment }}</td>
-	  <td>{{ tstamp }}</td>
-	  <td>{{ grade }}</td>
-        </tr>
-      {% endfor %}
-      </tbody>
-    </table>
-    <br>
-    <h2>Labs</h2>
-    <table class="table table-hover">
-      <thead class="thead-inverse">
-	<tr>
-	  <th>Assignment</th>
-	  <th>Timestamp</th>
-	  <th>Grade</th>
-	</tr>
-      </thead>
-      <tbody>
-      {% for assignment, tstamp, grade in [('LAB1', '09/16/17 05:40 PM', 2),
-	                                   ('LAB2', '09/23/17 05:42 PM', 2),
-	                                   ('LAB3', '09/30/17 05:31 PM', 3),
-	                                   ('LAB4', '10/05/17 04:59 PM', 2),
-	                                   ('LAB5', '10/12/17 05:22 PM', 3)] %}
-        <tr>
-          <td>{{ assignment }}</td>
-	  <td>{{ tstamp }}</td>
-	  <td>{{ grade }}</td>
-        </tr>
-      {% endfor %}
-      </tbody>
-    </table>
-    <br>
-    <h2>Exams</h2>
-    <table class="table table-hover">
-      <thead class="thead-inverse">
-	<tr>
-	  <th>Exam</th>
-	  <th>Date</th>
-	  <th>Grade</th>
-	</tr>
-      </thead>
-      <tbody>
-      {% for exam, date, grade in [('Midterm 1', '10/12/17', 88),
-	                           ('Midterm 2', '11/08/17', 91),
-	                           ('Final',     '12/05/17', 100)] %}
-        <tr>
-          <td>{{ exam }}</td>
-	  <td>{{ date }}</td>
-	  <td>{{ grade }}</td>
-        </tr>
-      {% endfor %}
-      </tbody>
-    </table>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  
-    <script src="{{ static('core/table.js') }}" type="text/javascript"></script>
-    {% endblock %}
-</body>
-</html>
+{% endblock %}

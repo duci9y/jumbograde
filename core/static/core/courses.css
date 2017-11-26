@@ -1,6 +1,12 @@
-.btn-secondary {
-    margin-top: 10px;
-    margin-bottom: 10px;
+#course_select {
+    margin-top: 2rem;
+}
+
+.btn-light {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+    border-color: lightgrey;
 }
 
 .course {
@@ -10,13 +16,4 @@
 .logout {
     background-color: whitesmoke;
     min-width: 100px;
-}
-
-.panel {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    min-width: 375px;
-    text-align: center;
 }
