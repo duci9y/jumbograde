@@ -77,7 +77,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'jumbograde_test',
         'USER': 'postgres',
-        'PASSWORD': '123egg',
+        'PASSWORD': ' ',
         'HOST': 'localhost',
         'PORT': '5432',
     }
