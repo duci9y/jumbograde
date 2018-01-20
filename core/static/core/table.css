@@ -3,18 +3,12 @@
 }
 
 .back {
-    margin-bottom: 10px;
     background-color: white;
     border-color: lightgrey;
 }
 
 .grade-table {
     word-wrap: break-word;
-}
-
-.grade-head {
-    background-color: #333333;
-    color: white;
 }
 
 .table-row-clickable {

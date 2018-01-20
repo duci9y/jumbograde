@@ -4,16 +4,22 @@
 {% endblock %}
 
 {% block body %}
-<div class="card text-center mx-auto" id="course_select">
-  <div class="card-header">
-    <strong>Welcome to JumboGrade!</strong>
-  </div>
-  <div class="card-block"><br>
-    <p class="card-text">Which class would you like to view?<p>
-    <a class="btn btn-light course" href="../COMP11/view_grades" role="button">COMP11</a><br>
-    <a class="btn btn-light course" href="../COMP15/view_grades" role="button">COMP15</a><br>
-    <a class="btn btn-light course" href="../COMP40/view_grades" role="button">COMP40</a><br>
-    <a class="btn btn-light logout" href="../login" role="button">Logout</a>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card text-center mx-auto" id="course_select">
+        <div class="card-header">
+          <strong>Welcome to JumboGrade!</strong>
+        </div>
+        <div class="card-block"><br>
+          <p class="card-text">Which class would you like to view?<p>
+          <a class="btn btn-light course" href="../COMP11/view_grades" role="button">COMP11</a><br>
+          <a class="btn btn-light course" href="../COMP15/view_grades" role="button">COMP15</a><br>
+          <a class="btn btn-light course" href="../COMP40/view_grades" role="button">COMP40</a><br>
+          <a class="btn btn-light logout" href="../login" role="button">Logout</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}
