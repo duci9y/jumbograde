@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
 from django.db import models
 from django.contrib.postgres.fields import JSONField
 
@@ -17,19 +17,21 @@ class Course(models.Model):
     default_extensions = models.PositiveSmallIntegerField(default=0)
     default_max_extensions = models.PositiveSmallIntegerField(default=0)
     is_active = models.BooleanField(default=False)
+    grader_posix_group = models.OneToOneField(Group, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.display_name
 
 
 class Student(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     preferred_name = models.CharField(max_length=32)
-    courses_active = models.ManyToManyField(Course, related_name='students')
-    courses_grading = models.ManyToManyField(Course, related_name='graders')
-    courses_dropped = models.ManyToManyField(Course, related_name='dropped_students')
+    courses_active = models.ManyToManyField(Course, related_name='students', blank=True)
+    courses_grading = models.ManyToManyField(Course, related_name='graders', blank=True)
+    courses_dropped = models.ManyToManyField(Course, related_name='dropped_students', blank=True)
 
-
-class ScorecardFormat(models.Model):
-    # TODO: Think more
-    data = JSONField()
+    def __str__(self):
+        return self.user.last_name + ', ' + self.user.first_name
 
 
 class Autograder(models.Model):
@@ -41,14 +43,23 @@ class Autograder(models.Model):
 
 class Assignment(models.Model):
     display_name = models.CharField(max_length=32)
-    scorecard_format = models.OneToOneField(ScorecardFormat, on_delete=models.CASCADE)
-    autograders = models.ManyToManyField(Autograder, related_name='assignments')
+    # scorecard_format = models.OneToOneField(ScorecardFormat, on_delete=models.CASCADE)
+    autograders = models.ManyToManyField(Autograder, related_name='assignments', blank=True)
     due_date = models.DateTimeField()
     scorecards_published = models.BooleanField(default=False)
     is_published = models.BooleanField(default=False)
     max_extensions = models.PositiveSmallIntegerField(default=0)
     course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='assignments')
     accepting_submissions = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.display_name
+
+
+class ScorecardFormat(models.Model):
+    # TODO: Think more
+    assignment = models.OneToOneField(Assignment, related_name='scorecard_format', on_delete=models.CASCADE)
+    data = JSONField()
 
 
 class Extension(models.Model):
