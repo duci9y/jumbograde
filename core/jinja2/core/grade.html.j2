@@ -22,20 +22,20 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-2 sidebar text-left bg-light" id="sidebar-left">
+    <div class="col-2 sidebar text-left bg-light">
       Assignments
+      {% for assignment in assignment_list %}
+        <li>{{ assignment }}</li>
+      {% endfor %}
     </div>
-    <div class="col-md-8 text-center" id="content">
+    <div class="col-8 text-center">
       <h1 class="display-4">
         Grade an Assignment
       </h1>
       <br>
-      <button type="button" class="btn btn-primary toggle-sidebar-left">Toggle Left</button>
       <button type="button" class="btn btn-primary">Hit Me</button>
-      <button type="button" class="btn btn-primary toggle-sidebar-right">Toggle Right</button>
     </div>
-    <div class="col-md-2 sidebar text-right bg-light" id="sidebar-right">
-      Statistics   
+    <div class="col-2">
     </div>
   </div>
 </div>

@@ -44,13 +44,13 @@ class Autograder(models.Model):
 class Assignment(models.Model):
     display_name = models.CharField(max_length=32)
     # scorecard_format = models.OneToOneField(ScorecardFormat, on_delete=models.CASCADE)
-    autograders = models.ManyToManyField(Autograder, related_name='assignments', blank=True)
-    due_date = models.DateTimeField()
-    scorecards_published = models.BooleanField(default=False)
-    is_published = models.BooleanField(default=False)
-    max_extensions = models.PositiveSmallIntegerField(default=0)
-    course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='assignments')
-    accepting_submissions = models.BooleanField(default=False)
+    # autograders = models.ManyToManyField(Autograder, related_name='assignments', blank=True)
+    # due_date = models.DateTimeField()
+    # scorecards_published = models.BooleanField(default=False)
+    # is_published = models.BooleanField(default=False)
+    # max_extensions = models.PositiveSmallIntegerField(default=0)
+    # course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='assignments')
+    # accepting_submissions = models.BooleanField(default=False)
 
     def __str__(self):
         return self.display_name
