@@ -31,19 +31,17 @@
           </tr>
         </thead>
         <tbody>
-        {% for assignment, tstamp, grade in [('HW1', '09/16/17 02:14 PM', 89),
-                                             ('HW2', '09/25/17 12:45 PM', 96),
-      	                                     ('HW3', '10/11/17 09:39 PM', 93)] %}
+        {% for assignment in assignment_list %}
           <tr>
             <td class="p-0 d-inline-block col-4">
-              <a class="p-2 d-block table-row-clickable" href="{{ assignment }}">{{ assignment }}</a>
+              <a class="p-2 d-block table-row-clickable" href="{{ assignment }}">{{ assignment.display_name }}</a>
             </td>
-            <td class="p-0 d-inline-block col-5">
+            <!-- <td class="p-0 d-inline-block col-5">
               <a class="p-2 d-block table-row-clickable" href="{{ assignment }}">{{ tstamp }}</a>
             </td>
             <td class="p-0 d-inline-block col-3">
               <a class="p-2 d-block table-row-clickable" href="{{ assignment }}">{{ grade }} / 100</a>
-            </td>
+            </td> -->
           </tr>
         {% endfor %}
         </tbody>

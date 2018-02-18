@@ -1,20 +1,19 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import View
 from core.models import Assignment 
 # Create your views here.
 
-def get_assignments(request):
-    # Obtain the context from the HTTP request.
-    context = RequestContext(request)
+# Using class based views
+class AssignmentStudentView(View):
+    def get(self, request):
+        assignment_list = Assignment.objects.order_by('display_name')
+        context = {
+            'assignment_list' : assignment_list,
+        }
+        return render(request, 'core/table.html.j2', context) 
 
-    # Query the database for a list of ALL categories currently stored.
-    # Order the categories by no. likes in descending order.
-    # Retrieve the top 5 only - or all if less than 5.
-    # Place the list in our context_dict dictionary which will be passed to the template engine.
-    assignment_list = Assignment.objects.order_by('-due_date')[:5]
-    context_dict = {'assignments': assignment_list}
 
-    # Render the response and send it back!
-    return render_to_response('core/courses.html.j2', context_dict, context)
+
+
 
 
