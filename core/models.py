@@ -17,10 +17,10 @@ class Course(models.Model):
     default_extensions = models.PositiveSmallIntegerField(default=0)
     default_max_extensions = models.PositiveSmallIntegerField(default=0)
     is_active = models.BooleanField(default=False)
-    grader_posix_group = models.OneToOneField(Group, on_delete=models.CASCADE)
+    grader_posix_group = models.ForeignKey(Group, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.display_name
+        return self.course_number + ': ' + self.display_name
 
 
 class Student(models.Model):
@@ -43,14 +43,13 @@ class Autograder(models.Model):
 
 class Assignment(models.Model):
     display_name = models.CharField(max_length=32)
-    # scorecard_format = models.OneToOneField(ScorecardFormat, on_delete=models.CASCADE)
-    # autograders = models.ManyToManyField(Autograder, related_name='assignments', blank=True)
-    # due_date = models.DateTimeField()
-    # scorecards_published = models.BooleanField(default=False)
-    # is_published = models.BooleanField(default=False)
-    # max_extensions = models.PositiveSmallIntegerField(default=0)
-    # course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='assignments')
-    # accepting_submissions = models.BooleanField(default=False)
+    autograders = models.ManyToManyField(Autograder, related_name='assignments', blank=True)
+    due_date = models.DateTimeField()
+    scorecards_published = models.BooleanField(default=False)
+    is_published = models.BooleanField(default=False)
+    max_extensions = models.PositiveSmallIntegerField(default=0)
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='assignments')
+    accepting_submissions = models.BooleanField(default=False)
 
     def __str__(self):
         return self.display_name
@@ -74,7 +73,7 @@ class Scorecard(TimestampsModel):
     grader = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='scorecards_graded')
     data = JSONField()
     assignment = models.ForeignKey(Assignment, on_delete=models.CASCADE, related_name='scorecards')
-
+    # TODO: link to submission
 
 class Submission(TimestampsModel):
     student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='submissions')
