@@ -36,12 +36,12 @@
             <td class="p-0 d-inline-block col-4">
               <a class="p-2 d-block table-row-clickable" href="{{ assignment }}">{{ assignment.display_name }}</a>
             </td>
-            <!-- <td class="p-0 d-inline-block col-5">
-              <a class="p-2 d-block table-row-clickable" href="{{ assignment }}">{{ tstamp }}</a>
+            <td class="p-0 d-inline-block col-5">
+              <a class="p-2 d-block table-row-clickable" href="{{ assignment }}">{{ assignment.due_date}}</a>
             </td>
             <td class="p-0 d-inline-block col-3">
-              <a class="p-2 d-block table-row-clickable" href="{{ assignment }}">{{ grade }} / 100</a>
-            </td> -->
+              <a class="p-2 d-block table-row-clickable" href="{{ assignment }}">{{ assignment.grade}} / 100</a>
+            </td>
           </tr>
         {% endfor %}
         </tbody>
