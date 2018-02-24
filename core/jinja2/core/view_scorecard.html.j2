@@ -1,0 +1,33 @@
+{% extends 'layout.html.j2' %}
+{% block head %}
+<link rel="stylesheet" href="{{ static('core/view_scorecard.css') }}">
+{% endblock %}
+
+{% block body %}
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Function</th>
+      <th scope="col">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for group in scorecard %}
+    {% for section in group.sections %}
+    <tr>
+      <td>
+          {{section.section_name}} <br>
+          {% for item in section['items'] %}
+          {{item.description}} {{item.points_received}} / {{item.points_max}}
+          {% endfor %}
+
+      </td>
+      <td>
+          {{section.comments}}
+      </td>
+    </tr>
+    {% endfor %}
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
