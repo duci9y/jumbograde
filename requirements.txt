@@ -1,8 +1,14 @@
+amqp==1.4.9
+anyjson==0.3.3
+billiard==3.3.0.23
 Django==1.11.7
 django-auth-ldap==1.2.16
 django-constance==2.0.0
+django-hashid-field==2.1.0
 django-picklefield==1.0.0
+hashids==1.2.0
 Jinja2==2.9.6
+kombu==3.0.37
 MarkupSafe==1.0
 psycopg2==2.7.3.2
 pyldap==2.4.37
