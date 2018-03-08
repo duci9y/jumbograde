@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User, Group
 from django.db import models
 from django.contrib.postgres.fields import JSONField
+from hashid_field import HashidAutoField
 
 class TimestampsModel(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
@@ -55,9 +56,9 @@ class Assignment(models.Model):
         return self.display_name
 
 
-class ScorecardFormat(models.Model):
+class ScorecardTemplate(models.Model):
     # TODO: Think more
-    assignment = models.OneToOneField(Assignment, related_name='scorecard_format', on_delete=models.CASCADE)
+    assignment = models.OneToOneField(Assignment, related_name='scorecard_template', on_delete=models.CASCADE)
     data = JSONField()
 
 
@@ -69,6 +70,11 @@ class Extension(models.Model):
 
 
 class Scorecard(TimestampsModel):
+    id = HashidAutoField('ID',
+                         primary_key=True,
+                         min_length=8,
+                         allow_int=False,)
+                         # alphabet='ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890',)
     student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='scorecards_received')
     grader = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='scorecards_graded')
     data = JSONField()

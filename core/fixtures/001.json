@@ -1,1925 +1,2294 @@
 [
   {
-    "model": "auth.group",
-    "pk": 1,
-    "fields": {
-      "name": "occaecat",
-      "permissions": []
-    }
-  },
-  {
-    "model": "auth.group",
-    "pk": 2,
-    "fields": {
-      "name": "velit",
-      "permissions": []
-    }
-  },
-  {
-    "model": "auth.group",
-    "pk": 3,
-    "fields": {
-      "name": "quis",
-      "permissions": []
-    }
-  },
-  {
-    "model": "auth.group",
-    "pk": 4,
-    "fields": {
-      "name": "morem",
-      "permissions": []
-    }
-  },
-  {
-    "model": "auth.group",
-    "pk": 5,
-    "fields": {
-      "name": "sic",
-      "permissions": []
-    }
-  },
-  {
-    "model": "auth.group",
-    "pk": 6,
-    "fields": {
-      "name": "tempor",
-      "permissions": []
-    }
-  },
-  {
-    "model": "core.course",
-    "pk": 1,
-    "fields": {
-      "display_name": "fugiat enim ullamco",
-      "course_number": "COMP 185",
-      "semester": "Spring 2018",
-      "default_extensions": 2,
-      "default_max_extensions": 2,
-      "is_active": false,
-      "grader_posix_group": 3
-    }
-  },
-  {
-    "model": "core.course",
-    "pk": 2,
-    "fields": {
-      "display_name": "excepteur fugiat culpa",
-      "course_number": "COMP 117",
-      "semester": "Spring 2018",
-      "default_extensions": 2,
-      "default_max_extensions": 2,
-      "is_active": true,
-      "grader_posix_group": 4
-    }
-  },
-  {
-    "model": "core.course",
-    "pk": 3,
-    "fields": {
-      "display_name": "fugiat aliqua aliqua",
-      "course_number": "COMP 15",
-      "semester": "Spring 2018",
-      "default_extensions": 2,
-      "default_max_extensions": 2,
-      "is_active": false,
-      "grader_posix_group": 2
-    }
-  },
-  {
-    "model": "core.course",
-    "pk": 4,
-    "fields": {
-      "display_name": "irure culpa labore",
-      "course_number": "COMP 148",
-      "semester": "Spring 2018",
-      "default_extensions": 2,
-      "default_max_extensions": 2,
-      "is_active": false,
-      "grader_posix_group": 4
-    }
-  },
-  {
-    "model": "core.course",
-    "pk": 5,
-    "fields": {
-      "display_name": "laborum mollit incididunt",
-      "course_number": "COMP 188",
-      "semester": "Spring 2018",
-      "default_extensions": 2,
-      "default_max_extensions": 2,
-      "is_active": true,
-      "grader_posix_group": 1
-    }
-  },
-  {
-    "model": "core.course",
-    "pk": 6,
-    "fields": {
-      "display_name": "qui reprehenderit incididunt",
-      "course_number": "COMP 60",
-      "semester": "Spring 2018",
-      "default_extensions": 2,
-      "default_max_extensions": 2,
-      "is_active": false,
-      "grader_posix_group": 5
-    }
-  },
-  {
-    "model": "core.course",
-    "pk": 7,
-    "fields": {
-      "display_name": "lorem possum",
-      "course_number": "COMP 160",
-      "semester": "Spring 2018",
-      "default_extensions": 2,
-      "default_max_extensions": 2,
-      "is_active": false,
-      "grader_posix_group": 4
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 1,
-    "fields": {
-      "user": 2,
-      "preferred_name": "Crawford",
-      "courses_active": [
-        1,
-        6
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 2,
-    "fields": {
-      "user": 3,
-      "preferred_name": "Frost",
-      "courses_active": [
-        2,
-        3
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 3,
-    "fields": {
-      "user": 4,
-      "preferred_name": "Burton",
-      "courses_active": [
-        5,
-        1
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 4,
-    "fields": {
-      "user": 5,
-      "preferred_name": "Bridget",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 5,
-    "fields": {
-      "user": 6,
-      "preferred_name": "Guadalupe",
-      "courses_active": [
-        6
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 6,
-    "fields": {
-      "user": 7,
-      "preferred_name": "Marva",
-      "courses_active": [
-        6
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 7,
-    "fields": {
-      "user": 8,
-      "preferred_name": "Cote",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 8,
-    "fields": {
-      "user": 9,
-      "preferred_name": "Olga",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 9,
-    "fields": {
-      "user": 10,
-      "preferred_name": "Stacy",
-      "courses_active": [
-        1
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 10,
-    "fields": {
-      "user": 11,
-      "preferred_name": "Meredith",
-      "courses_active": [
-        2,
-        6
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 11,
-    "fields": {
-      "user": 12,
-      "preferred_name": "Burks",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 12,
-    "fields": {
-      "user": 13,
-      "preferred_name": "Margarita",
-      "courses_active": [
-        1,
-        2
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 13,
-    "fields": {
-      "user": 14,
-      "preferred_name": "Doris",
-      "courses_active": [
-        6
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 14,
-    "fields": {
-      "user": 15,
-      "preferred_name": "Deirdre",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 15,
-    "fields": {
-      "user": 16,
-      "preferred_name": "Mann",
-      "courses_active": [
-        5,
-        3
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 16,
-    "fields": {
-      "user": 17,
-      "preferred_name": "Sellers",
-      "courses_active": [
-        1,
-        4
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 17,
-    "fields": {
-      "user": 18,
-      "preferred_name": "Pickett",
-      "courses_active": [
-        6
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 18,
-    "fields": {
-      "user": 19,
-      "preferred_name": "Amparo",
-      "courses_active": [
-        6,
-        3
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 19,
-    "fields": {
-      "user": 20,
-      "preferred_name": "Hannah",
-      "courses_active": [
-        2,
-        2
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 20,
-    "fields": {
-      "user": 21,
-      "preferred_name": "Juliette",
-      "courses_active": [
-        1
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 21,
-    "fields": {
-      "user": 22,
-      "preferred_name": "Shawn",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 22,
-    "fields": {
-      "user": 23,
-      "preferred_name": "Megan",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 23,
-    "fields": {
-      "user": 24,
-      "preferred_name": "Hensley",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 24,
-    "fields": {
-      "user": 25,
-      "preferred_name": "Bessie",
-      "courses_active": [
-        3
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 25,
-    "fields": {
-      "user": 26,
-      "preferred_name": "Gray",
-      "courses_active": [
-        6
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 26,
-    "fields": {
-      "user": 27,
-      "preferred_name": "Eva",
-      "courses_active": [
-        1
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 27,
-    "fields": {
-      "user": 28,
-      "preferred_name": "Flynn",
-      "courses_active": [
-        7,
-        6
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 28,
-    "fields": {
-      "user": 29,
-      "preferred_name": "Kelsey",
-      "courses_active": [
-        5
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 29,
-    "fields": {
-      "user": 30,
-      "preferred_name": "Alisa",
-      "courses_active": [
-        7
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 30,
-    "fields": {
-      "user": 31,
-      "preferred_name": "Dorsey",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 31,
-    "fields": {
-      "user": 32,
-      "preferred_name": "Elva",
-      "courses_active": [
-        6,
-        6
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 32,
-    "fields": {
-      "user": 33,
-      "preferred_name": "Tabitha",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 33,
-    "fields": {
-      "user": 34,
-      "preferred_name": "Lorie",
-      "courses_active": [
-        4,
-        3
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 34,
-    "fields": {
-      "user": 35,
-      "preferred_name": "Branch",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 35,
-    "fields": {
-      "user": 36,
-      "preferred_name": "Garrison",
-      "courses_active": [
-        4
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 36,
-    "fields": {
-      "user": 37,
-      "preferred_name": "Nannie",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 37,
-    "fields": {
-      "user": 38,
-      "preferred_name": "Sofia",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 38,
-    "fields": {
-      "user": 39,
-      "preferred_name": "Lottie",
-      "courses_active": [
-        7,
-        2
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 39,
-    "fields": {
-      "user": 40,
-      "preferred_name": "Bradshaw",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 40,
-    "fields": {
-      "user": 41,
-      "preferred_name": "Bernadette",
-      "courses_active": [
-        7
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 41,
-    "fields": {
-      "user": 42,
-      "preferred_name": "Hall",
-      "courses_active": [
-        4,
-        2
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 42,
-    "fields": {
-      "user": 43,
-      "preferred_name": "Duffy",
-      "courses_active": [
-        2,
-        4
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 43,
-    "fields": {
-      "user": 44,
-      "preferred_name": "Molina",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 44,
-    "fields": {
-      "user": 45,
-      "preferred_name": "Karen",
-      "courses_active": [
-        7,
-        1
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 45,
-    "fields": {
-      "user": 46,
-      "preferred_name": "Allison",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 46,
-    "fields": {
-      "user": 47,
-      "preferred_name": "Nadine",
-      "courses_active": [
-        1
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 47,
-    "fields": {
-      "user": 48,
-      "preferred_name": "Manuela",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 48,
-    "fields": {
-      "user": 49,
-      "preferred_name": "Nina",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 49,
-    "fields": {
-      "user": 50,
-      "preferred_name": "Jan",
-      "courses_active": [
-        5,
-        3
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 50,
-    "fields": {
-      "user": 51,
-      "preferred_name": "Dixie",
-      "courses_active": [
-        1,
-        5
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 51,
-    "fields": {
-      "user": 52,
-      "preferred_name": "Ora",
-      "courses_active": [],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 52,
-    "fields": {
-      "user": 53,
-      "preferred_name": "David",
-      "courses_active": [
-        1
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 53,
-    "fields": {
-      "user": 54,
-      "preferred_name": "Cooke",
-      "courses_active": [
-        3
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 54,
-    "fields": {
-      "user": 55,
-      "preferred_name": "Stark",
-      "courses_active": [
-        4
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 55,
-    "fields": {
-      "user": 56,
-      "preferred_name": "Fox",
-      "courses_active": [
-        1,
-        6
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 56,
-    "fields": {
-      "user": 57,
-      "preferred_name": "Maura",
-      "courses_active": [
-        6
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "core.student",
-    "pk": 57,
-    "fields": {
-      "user": 58,
-      "preferred_name": "Le",
-      "courses_active": [
-        1
-      ],
-      "courses_grading": [],
-      "courses_dropped": []
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 1,
-    "fields": {
-      "first_name": "Head",
-      "last_name": "Peterson",
-      "username": "hpeter05",
-      "email": "hpeter05@eecs.tufts.edu",
-      "groups": [
-        4,
-        4,
-        3
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 2,
-    "fields": {
-      "first_name": "Snyder",
-      "last_name": "Wallace",
-      "username": "swalla07",
-      "email": "swalla07@eecs.tufts.edu",
-      "groups": [
-        4,
-        2
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 3,
-    "fields": {
-      "first_name": "Hilda",
-      "last_name": "Aguirre",
-      "username": "haguir08",
-      "email": "haguir08@eecs.tufts.edu",
-      "groups": [
-        2,
-        2,
-        4,
-        5
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 4,
-    "fields": {
-      "first_name": "Carson",
-      "last_name": "Hendrix",
-      "username": "chendr02",
-      "email": "chendr02@eecs.tufts.edu",
-      "groups": [
-        3,
-        1
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 5,
-    "fields": {
-      "first_name": "Guerrero",
-      "last_name": "Fitzgerald",
-      "username": "gfitzg03",
-      "email": "gfitzg03@eecs.tufts.edu",
-      "groups": [
-        4,
-        2,
-        5,
-        5
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 6,
-    "fields": {
-      "first_name": "Jarvis",
-      "last_name": "Hays",
-      "username": "jhays04",
-      "email": "jhays04@eecs.tufts.edu",
-      "groups": [
-        3
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 7,
-    "fields": {
-      "first_name": "Kaitlin",
-      "last_name": "Potter",
-      "username": "kpotte02",
-      "email": "kpotte02@eecs.tufts.edu",
-      "groups": [
-        1
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 8,
-    "fields": {
-      "first_name": "Tammi",
-      "last_name": "Delacruz",
-      "username": "tdelac07",
-      "email": "tdelac07@eecs.tufts.edu",
-      "groups": [
-        5,
-        1,
-        4,
-        4
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 9,
-    "fields": {
-      "first_name": "Holden",
-      "last_name": "Kelley",
-      "username": "hkelle01",
-      "email": "hkelle01@eecs.tufts.edu",
-      "groups": [
-        2,
-        4
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 10,
-    "fields": {
-      "first_name": "Savannah",
-      "last_name": "Montoya",
-      "username": "smonto09",
-      "email": "smonto09@eecs.tufts.edu",
-      "groups": [
-        2,
-        4,
-        1,
-        1
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 11,
-    "fields": {
-      "first_name": "Kathryn",
-      "last_name": "Baxter",
-      "username": "kbaxte02",
-      "email": "kbaxte02@eecs.tufts.edu",
-      "groups": [
-        3,
-        5,
-        2
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 12,
-    "fields": {
-      "first_name": "Leblanc",
-      "last_name": "Johns",
-      "username": "ljohns07",
-      "email": "ljohns07@eecs.tufts.edu",
-      "groups": [
-        1
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 13,
-    "fields": {
-      "first_name": "Scott",
-      "last_name": "Dunlap",
-      "username": "sdunla09",
-      "email": "sdunla09@eecs.tufts.edu",
-      "groups": [
-        1,
-        3
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 14,
-    "fields": {
-      "first_name": "Jackson",
-      "last_name": "Sanchez",
-      "username": "jsanch03",
-      "email": "jsanch03@eecs.tufts.edu",
-      "groups": [
-        2,
-        3,
-        5,
-        2
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 15,
-    "fields": {
-      "first_name": "Decker",
-      "last_name": "Delgado",
-      "username": "ddelga07",
-      "email": "ddelga07@eecs.tufts.edu",
-      "groups": [
-        4,
-        1,
-        5,
-        3
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 16,
-    "fields": {
-      "first_name": "Eddie",
-      "last_name": "Manning",
-      "username": "emanni09",
-      "email": "emanni09@eecs.tufts.edu",
-      "groups": [
-        1,
-        1,
-        2
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 17,
-    "fields": {
-      "first_name": "Tami",
-      "last_name": "Marks",
-      "username": "tmarks09",
-      "email": "tmarks09@eecs.tufts.edu",
-      "groups": [
-        5,
-        4,
-        4,
-        2
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 18,
-    "fields": {
-      "first_name": "Dena",
-      "last_name": "Flores",
-      "username": "dflore03",
-      "email": "dflore03@eecs.tufts.edu",
-      "groups": [
-        2,
-        2
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 19,
-    "fields": {
-      "first_name": "Camille",
-      "last_name": "Jefferson",
-      "username": "cjeffe02",
-      "email": "cjeffe02@eecs.tufts.edu",
-      "groups": [
-        2,
-        2,
-        3
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 20,
-    "fields": {
-      "first_name": "Blanca",
-      "last_name": "Cochran",
-      "username": "bcochr09",
-      "email": "bcochr09@eecs.tufts.edu",
-      "groups": [
-        2,
-        2,
-        4
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 21,
-    "fields": {
-      "first_name": "Carpenter",
-      "last_name": "Jordan",
-      "username": "cjorda05",
-      "email": "cjorda05@eecs.tufts.edu",
-      "groups": [
-        1
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 22,
-    "fields": {
-      "first_name": "Williams",
-      "last_name": "Cole",
-      "username": "wcole01",
-      "email": "wcole01@eecs.tufts.edu",
-      "groups": [
-        4
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 23,
-    "fields": {
-      "first_name": "Chang",
-      "last_name": "Harvey",
-      "username": "charve03",
-      "email": "charve03@eecs.tufts.edu",
-      "groups": [
-        4
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 24,
-    "fields": {
-      "first_name": "Lowery",
-      "last_name": "Ballard",
-      "username": "lballa03",
-      "email": "lballa03@eecs.tufts.edu",
-      "groups": [
-        2,
-        1,
-        2
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 25,
-    "fields": {
-      "first_name": "Deanne",
-      "last_name": "Farley",
-      "username": "dfarle05",
-      "email": "dfarle05@eecs.tufts.edu",
-      "groups": [
-        5
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 26,
-    "fields": {
-      "first_name": "Mathews",
-      "last_name": "Reeves",
-      "username": "mreeve01",
-      "email": "mreeve01@eecs.tufts.edu",
-      "groups": [
-        5,
-        5,
-        4
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 27,
-    "fields": {
-      "first_name": "Stacey",
-      "last_name": "Nielsen",
-      "username": "sniels06",
-      "email": "sniels06@eecs.tufts.edu",
-      "groups": [
-        4,
-        5,
-        5
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 28,
-    "fields": {
-      "first_name": "Beasley",
-      "last_name": "Boone",
-      "username": "bboone04",
-      "email": "bboone04@eecs.tufts.edu",
-      "groups": [
-        4,
-        1,
-        5,
-        1
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 29,
-    "fields": {
-      "first_name": "Rodgers",
-      "last_name": "Pena",
-      "username": "rpena06",
-      "email": "rpena06@eecs.tufts.edu",
-      "groups": [
-        4,
-        4,
-        4
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 30,
-    "fields": {
-      "first_name": "Chapman",
-      "last_name": "Daniel",
-      "username": "cdanie01",
-      "email": "cdanie01@eecs.tufts.edu",
-      "groups": [
-        3
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 31,
-    "fields": {
-      "first_name": "Burgess",
-      "last_name": "Rios",
-      "username": "brios02",
-      "email": "brios02@eecs.tufts.edu",
-      "groups": [
-        1,
-        1,
-        3,
-        2
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 32,
-    "fields": {
-      "first_name": "Hensley",
-      "last_name": "Justice",
-      "username": "hjusti04",
-      "email": "hjusti04@eecs.tufts.edu",
-      "groups": [
-        3,
-        2,
-        3
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 33,
-    "fields": {
-      "first_name": "Harrington",
-      "last_name": "Delaney",
-      "username": "hdelan02",
-      "email": "hdelan02@eecs.tufts.edu",
-      "groups": [
-        5
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 34,
-    "fields": {
-      "first_name": "Ethel",
-      "last_name": "Reese",
-      "username": "ereese07",
-      "email": "ereese07@eecs.tufts.edu",
-      "groups": [
-        5,
-        5
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 35,
-    "fields": {
-      "first_name": "Sofia",
-      "last_name": "George",
-      "username": "sgeorg06",
-      "email": "sgeorg06@eecs.tufts.edu",
-      "groups": [
-        4
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 36,
-    "fields": {
-      "first_name": "Dolly",
-      "last_name": "Hurst",
-      "username": "dhurst08",
-      "email": "dhurst08@eecs.tufts.edu",
-      "groups": [
-        4,
-        2,
-        3
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 37,
-    "fields": {
-      "first_name": "Burke",
-      "last_name": "Maynard",
-      "username": "bmayna08",
-      "email": "bmayna08@eecs.tufts.edu",
-      "groups": [
-        2,
-        2,
-        4
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 38,
-    "fields": {
-      "first_name": "Hunt",
-      "last_name": "Crawford",
-      "username": "hcrawf07",
-      "email": "hcrawf07@eecs.tufts.edu",
-      "groups": [
-        3,
-        4
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 39,
-    "fields": {
-      "first_name": "Kathleen",
-      "last_name": "Michael",
-      "username": "kmicha06",
-      "email": "kmicha06@eecs.tufts.edu",
-      "groups": [
-        1,
-        4,
-        4,
-        4
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 40,
-    "fields": {
-      "first_name": "Rios",
-      "last_name": "Houston",
-      "username": "rhoust01",
-      "email": "rhoust01@eecs.tufts.edu",
-      "groups": [
-        1
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 41,
-    "fields": {
-      "first_name": "Fields",
-      "last_name": "Dotson",
-      "username": "fdotso05",
-      "email": "fdotso05@eecs.tufts.edu",
-      "groups": [
-        5
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 42,
-    "fields": {
-      "first_name": "Brennan",
-      "last_name": "Wilkins",
-      "username": "bwilki09",
-      "email": "bwilki09@eecs.tufts.edu",
-      "groups": [
-        5,
-        1,
-        3
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 43,
-    "fields": {
-      "first_name": "Jillian",
-      "last_name": "Bond",
-      "username": "jbond04",
-      "email": "jbond04@eecs.tufts.edu",
-      "groups": [
-        2,
-        3,
-        3
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 44,
-    "fields": {
-      "first_name": "Frederick",
-      "last_name": "Madden",
-      "username": "fmadde02",
-      "email": "fmadde02@eecs.tufts.edu",
-      "groups": [
-        4,
-        5
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 45,
-    "fields": {
-      "first_name": "Terry",
-      "last_name": "Mccullough",
-      "username": "tmccul09",
-      "email": "tmccul09@eecs.tufts.edu",
-      "groups": [
-        2,
-        5,
-        3
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 46,
-    "fields": {
-      "first_name": "Calhoun",
-      "last_name": "Thornton",
-      "username": "cthorn02",
-      "email": "cthorn02@eecs.tufts.edu",
-      "groups": [
-        2,
-        5
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 47,
-    "fields": {
-      "first_name": "Gordon",
-      "last_name": "Newman",
-      "username": "gnewma05",
-      "email": "gnewma05@eecs.tufts.edu",
-      "groups": [
-        1,
-        5,
-        3,
-        1
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 48,
-    "fields": {
-      "first_name": "Ruby",
-      "last_name": "Shannon",
-      "username": "rshann02",
-      "email": "rshann02@eecs.tufts.edu",
-      "groups": [
-        5
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 49,
-    "fields": {
-      "first_name": "Cabrera",
-      "last_name": "Acosta",
-      "username": "cacost09",
-      "email": "cacost09@eecs.tufts.edu",
-      "groups": [
-        5,
-        3
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 50,
-    "fields": {
-      "first_name": "Jennifer",
-      "last_name": "Bean",
-      "username": "jbean08",
-      "email": "jbean08@eecs.tufts.edu",
-      "groups": [
-        5
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 51,
-    "fields": {
-      "first_name": "Moreno",
-      "last_name": "Patton",
-      "username": "mpatto05",
-      "email": "mpatto05@eecs.tufts.edu",
-      "groups": [
-        5,
-        3,
-        5,
-        4
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 52,
-    "fields": {
-      "first_name": "Roxanne",
-      "last_name": "Peck",
-      "username": "rpeck01",
-      "email": "rpeck01@eecs.tufts.edu",
-      "groups": [
-        5,
-        2
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 53,
-    "fields": {
-      "first_name": "Iris",
-      "last_name": "Villarreal",
-      "username": "ivilla09",
-      "email": "ivilla09@eecs.tufts.edu",
-      "groups": [
-        2,
-        4
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 54,
-    "fields": {
-      "first_name": "Pena",
-      "last_name": "Gallagher",
-      "username": "pgalla02",
-      "email": "pgalla02@eecs.tufts.edu",
-      "groups": [
-        3,
-        4,
-        2
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 55,
-    "fields": {
-      "first_name": "Beulah",
-      "last_name": "Burt",
-      "username": "bburt03",
-      "email": "bburt03@eecs.tufts.edu",
-      "groups": [
-        3,
-        1,
-        5,
-        3
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 56,
-    "fields": {
-      "first_name": "Dale",
-      "last_name": "Armstrong",
-      "username": "darmst03",
-      "email": "darmst03@eecs.tufts.edu",
-      "groups": [
-        2
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 57,
-    "fields": {
-      "first_name": "Tamera",
-      "last_name": "Fernandez",
-      "username": "tferna01",
-      "email": "tferna01@eecs.tufts.edu",
-      "groups": [
-        2
-      ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 58,
-    "fields": {
-      "first_name": "Leach",
-      "last_name": "Garrett",
-      "username": "lgarre04",
-      "email": "lgarre04@eecs.tufts.edu",
-      "groups": [
-        5,
-        3
-      ]
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 1,
-    "fields": {
-      "display_name": "enim et",
-      "autograders": [],
-      "due_date": "2018-01-16T12:42:15+05:00",
-      "scorecards_published": true,
-      "is_published": false,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 6
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 2,
-    "fields": {
-      "display_name": "pariatur esse",
-      "autograders": [],
-      "due_date": "2018-01-20T09:38:52+05:00",
-      "scorecards_published": false,
-      "is_published": false,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 1
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 3,
-    "fields": {
-      "display_name": "enim eiusmod",
-      "autograders": [],
-      "due_date": "2018-01-06T03:10:02+05:00",
-      "scorecards_published": false,
-      "is_published": false,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 5
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 4,
-    "fields": {
-      "display_name": "velit culpa",
-      "autograders": [],
-      "due_date": "2018-01-04T10:43:26+05:00",
-      "scorecards_published": false,
-      "is_published": true,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 3
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 5,
-    "fields": {
-      "display_name": "sint labore",
-      "autograders": [],
-      "due_date": "2018-01-05T06:31:10+05:00",
-      "scorecards_published": false,
-      "is_published": true,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 6
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 6,
-    "fields": {
-      "display_name": "ut deserunt",
-      "autograders": [],
-      "due_date": "2018-01-04T03:31:20+05:00",
-      "scorecards_published": true,
-      "is_published": true,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 2
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 7,
-    "fields": {
-      "display_name": "est tempor",
-      "autograders": [],
-      "due_date": "2018-01-21T01:13:27+05:00",
-      "scorecards_published": false,
-      "is_published": true,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 2
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 8,
-    "fields": {
-      "display_name": "officia culpa",
-      "autograders": [],
-      "due_date": "2018-01-20T05:30:26+05:00",
-      "scorecards_published": true,
-      "is_published": false,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 5
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 9,
-    "fields": {
-      "display_name": "cupidatat quis",
-      "autograders": [],
-      "due_date": "2018-01-15T06:50:06+05:00",
-      "scorecards_published": true,
-      "is_published": false,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 1
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 10,
-    "fields": {
-      "display_name": "aliquip elit",
-      "autograders": [],
-      "due_date": "2018-01-04T04:13:28+05:00",
-      "scorecards_published": true,
-      "is_published": false,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 1
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 11,
-    "fields": {
-      "display_name": "eiusmod elit",
-      "autograders": [],
-      "due_date": "2018-01-18T10:19:11+05:00",
-      "scorecards_published": true,
-      "is_published": false,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 2
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 12,
-    "fields": {
-      "display_name": "voluptate ea",
-      "autograders": [],
-      "due_date": "2018-01-21T08:19:29+05:00",
-      "scorecards_published": true,
-      "is_published": true,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 5
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 13,
-    "fields": {
-      "display_name": "aliqua ea",
-      "autograders": [],
-      "due_date": "2018-01-14T08:31:06+05:00",
-      "scorecards_published": false,
-      "is_published": false,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 2
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 14,
-    "fields": {
-      "display_name": "qui irure",
-      "autograders": [],
-      "due_date": "2018-01-17T09:01:10+05:00",
-      "scorecards_published": false,
-      "is_published": false,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 2
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 15,
-    "fields": {
-      "display_name": "ullamco cupidatat",
-      "autograders": [],
-      "due_date": "2018-01-05T04:24:33+05:00",
-      "scorecards_published": false,
-      "is_published": true,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 2
-    }
-  },
-  {
-    "model": "core.assignment",
-    "pk": 16,
-    "fields": {
-      "display_name": "est minim",
-      "autograders": [],
-      "due_date": "2018-01-07T03:07:28+05:00",
-      "scorecards_published": true,
-      "is_published": false,
-      "max_extensions": 2,
-      "accepting_submissions": true,
-      "course": 7
-    }
+      "model": "auth.group",
+      "pk": 1,
+      "fields":
+      {
+          "name": "occaecat",
+          "permissions": []
+      }
+  },
+  {
+      "model": "auth.group",
+      "pk": 2,
+      "fields":
+      {
+          "name": "velit",
+          "permissions": []
+      }
+  },
+  {
+      "model": "auth.group",
+      "pk": 3,
+      "fields":
+      {
+          "name": "quis",
+          "permissions": []
+      }
+  },
+  {
+      "model": "auth.group",
+      "pk": 4,
+      "fields":
+      {
+          "name": "morem",
+          "permissions": []
+      }
+  },
+  {
+      "model": "auth.group",
+      "pk": 5,
+      "fields":
+      {
+          "name": "sic",
+          "permissions": []
+      }
+  },
+  {
+      "model": "auth.group",
+      "pk": 6,
+      "fields":
+      {
+          "name": "tempor",
+          "permissions": []
+      }
+  },
+  {
+      "model": "core.course",
+      "pk": 1,
+      "fields":
+      {
+          "display_name": "fugiat enim ullamco",
+          "course_number": "COMP 185",
+          "semester": "Spring 2018",
+          "default_extensions": 2,
+          "default_max_extensions": 2,
+          "is_active": false,
+          "grader_posix_group": 3
+      }
+  },
+  {
+      "model": "core.course",
+      "pk": 2,
+      "fields":
+      {
+          "display_name": "excepteur fugiat culpa",
+          "course_number": "COMP 117",
+          "semester": "Spring 2018",
+          "default_extensions": 2,
+          "default_max_extensions": 2,
+          "is_active": true,
+          "grader_posix_group": 4
+      }
+  },
+  {
+      "model": "core.course",
+      "pk": 3,
+      "fields":
+      {
+          "display_name": "fugiat aliqua aliqua",
+          "course_number": "COMP 15",
+          "semester": "Spring 2018",
+          "default_extensions": 2,
+          "default_max_extensions": 2,
+          "is_active": false,
+          "grader_posix_group": 2
+      }
+  },
+  {
+      "model": "core.course",
+      "pk": 4,
+      "fields":
+      {
+          "display_name": "irure culpa labore",
+          "course_number": "COMP 148",
+          "semester": "Spring 2018",
+          "default_extensions": 2,
+          "default_max_extensions": 2,
+          "is_active": false,
+          "grader_posix_group": 4
+      }
+  },
+  {
+      "model": "core.course",
+      "pk": 5,
+      "fields":
+      {
+          "display_name": "laborum mollit incididunt",
+          "course_number": "COMP 188",
+          "semester": "Spring 2018",
+          "default_extensions": 2,
+          "default_max_extensions": 2,
+          "is_active": true,
+          "grader_posix_group": 1
+      }
+  },
+  {
+      "model": "core.course",
+      "pk": 6,
+      "fields":
+      {
+          "display_name": "qui reprehenderit incididunt",
+          "course_number": "COMP 60",
+          "semester": "Spring 2018",
+          "default_extensions": 2,
+          "default_max_extensions": 2,
+          "is_active": false,
+          "grader_posix_group": 5
+      }
+  },
+  {
+      "model": "core.course",
+      "pk": 7,
+      "fields":
+      {
+          "display_name": "lorem possum",
+          "course_number": "COMP 160",
+          "semester": "Spring 2018",
+          "default_extensions": 2,
+          "default_max_extensions": 2,
+          "is_active": false,
+          "grader_posix_group": 4
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 1,
+      "fields":
+      {
+          "user": 2,
+          "preferred_name": "Crawford",
+          "courses_active": [
+              1,
+              6
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 2,
+      "fields":
+      {
+          "user": 3,
+          "preferred_name": "Frost",
+          "courses_active": [
+              2,
+              3
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 3,
+      "fields":
+      {
+          "user": 4,
+          "preferred_name": "Burton",
+          "courses_active": [
+              5,
+              1
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 4,
+      "fields":
+      {
+          "user": 5,
+          "preferred_name": "Bridget",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 5,
+      "fields":
+      {
+          "user": 6,
+          "preferred_name": "Guadalupe",
+          "courses_active": [
+              6
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 6,
+      "fields":
+      {
+          "user": 7,
+          "preferred_name": "Marva",
+          "courses_active": [
+              6
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 7,
+      "fields":
+      {
+          "user": 8,
+          "preferred_name": "Cote",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 8,
+      "fields":
+      {
+          "user": 9,
+          "preferred_name": "Olga",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 9,
+      "fields":
+      {
+          "user": 10,
+          "preferred_name": "Stacy",
+          "courses_active": [
+              1
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 10,
+      "fields":
+      {
+          "user": 11,
+          "preferred_name": "Meredith",
+          "courses_active": [
+              2,
+              6
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 11,
+      "fields":
+      {
+          "user": 12,
+          "preferred_name": "Burks",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 12,
+      "fields":
+      {
+          "user": 13,
+          "preferred_name": "Margarita",
+          "courses_active": [
+              1,
+              2
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 13,
+      "fields":
+      {
+          "user": 14,
+          "preferred_name": "Doris",
+          "courses_active": [
+              6
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 14,
+      "fields":
+      {
+          "user": 15,
+          "preferred_name": "Deirdre",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 15,
+      "fields":
+      {
+          "user": 16,
+          "preferred_name": "Mann",
+          "courses_active": [
+              5,
+              3
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 16,
+      "fields":
+      {
+          "user": 17,
+          "preferred_name": "Sellers",
+          "courses_active": [
+              1,
+              4
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 17,
+      "fields":
+      {
+          "user": 18,
+          "preferred_name": "Pickett",
+          "courses_active": [
+              6
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 18,
+      "fields":
+      {
+          "user": 19,
+          "preferred_name": "Amparo",
+          "courses_active": [
+              6,
+              3
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 19,
+      "fields":
+      {
+          "user": 20,
+          "preferred_name": "Hannah",
+          "courses_active": [
+              2,
+              2
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 20,
+      "fields":
+      {
+          "user": 21,
+          "preferred_name": "Juliette",
+          "courses_active": [
+              1
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 21,
+      "fields":
+      {
+          "user": 22,
+          "preferred_name": "Shawn",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 22,
+      "fields":
+      {
+          "user": 23,
+          "preferred_name": "Megan",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 23,
+      "fields":
+      {
+          "user": 24,
+          "preferred_name": "Hensley",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 24,
+      "fields":
+      {
+          "user": 25,
+          "preferred_name": "Bessie",
+          "courses_active": [
+              3
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 25,
+      "fields":
+      {
+          "user": 26,
+          "preferred_name": "Gray",
+          "courses_active": [
+              6
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 26,
+      "fields":
+      {
+          "user": 27,
+          "preferred_name": "Eva",
+          "courses_active": [
+              1
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 27,
+      "fields":
+      {
+          "user": 28,
+          "preferred_name": "Flynn",
+          "courses_active": [
+              7,
+              6
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 28,
+      "fields":
+      {
+          "user": 29,
+          "preferred_name": "Kelsey",
+          "courses_active": [
+              5
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 29,
+      "fields":
+      {
+          "user": 30,
+          "preferred_name": "Alisa",
+          "courses_active": [
+              7
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 30,
+      "fields":
+      {
+          "user": 31,
+          "preferred_name": "Dorsey",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 31,
+      "fields":
+      {
+          "user": 32,
+          "preferred_name": "Elva",
+          "courses_active": [
+              6,
+              6
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 32,
+      "fields":
+      {
+          "user": 33,
+          "preferred_name": "Tabitha",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 33,
+      "fields":
+      {
+          "user": 34,
+          "preferred_name": "Lorie",
+          "courses_active": [
+              4,
+              3
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 34,
+      "fields":
+      {
+          "user": 35,
+          "preferred_name": "Branch",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 35,
+      "fields":
+      {
+          "user": 36,
+          "preferred_name": "Garrison",
+          "courses_active": [
+              4
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 36,
+      "fields":
+      {
+          "user": 37,
+          "preferred_name": "Nannie",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 37,
+      "fields":
+      {
+          "user": 38,
+          "preferred_name": "Sofia",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 38,
+      "fields":
+      {
+          "user": 39,
+          "preferred_name": "Lottie",
+          "courses_active": [
+              7,
+              2
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 39,
+      "fields":
+      {
+          "user": 40,
+          "preferred_name": "Bradshaw",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 40,
+      "fields":
+      {
+          "user": 41,
+          "preferred_name": "Bernadette",
+          "courses_active": [
+              7
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 41,
+      "fields":
+      {
+          "user": 42,
+          "preferred_name": "Hall",
+          "courses_active": [
+              4,
+              2
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 42,
+      "fields":
+      {
+          "user": 43,
+          "preferred_name": "Duffy",
+          "courses_active": [
+              2,
+              4
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 43,
+      "fields":
+      {
+          "user": 44,
+          "preferred_name": "Molina",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 44,
+      "fields":
+      {
+          "user": 45,
+          "preferred_name": "Karen",
+          "courses_active": [
+              7,
+              1
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 45,
+      "fields":
+      {
+          "user": 46,
+          "preferred_name": "Allison",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 46,
+      "fields":
+      {
+          "user": 47,
+          "preferred_name": "Nadine",
+          "courses_active": [
+              1
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 47,
+      "fields":
+      {
+          "user": 48,
+          "preferred_name": "Manuela",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 48,
+      "fields":
+      {
+          "user": 49,
+          "preferred_name": "Nina",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 49,
+      "fields":
+      {
+          "user": 50,
+          "preferred_name": "Jan",
+          "courses_active": [
+              5,
+              3
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 50,
+      "fields":
+      {
+          "user": 51,
+          "preferred_name": "Dixie",
+          "courses_active": [
+              1,
+              5
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 51,
+      "fields":
+      {
+          "user": 52,
+          "preferred_name": "Ora",
+          "courses_active": [],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 52,
+      "fields":
+      {
+          "user": 53,
+          "preferred_name": "David",
+          "courses_active": [
+              1
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 53,
+      "fields":
+      {
+          "user": 54,
+          "preferred_name": "Cooke",
+          "courses_active": [
+              3
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 54,
+      "fields":
+      {
+          "user": 55,
+          "preferred_name": "Stark",
+          "courses_active": [
+              4
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 55,
+      "fields":
+      {
+          "user": 56,
+          "preferred_name": "Fox",
+          "courses_active": [
+              1,
+              6
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 56,
+      "fields":
+      {
+          "user": 57,
+          "preferred_name": "Maura",
+          "courses_active": [
+              6
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "core.student",
+      "pk": 57,
+      "fields":
+      {
+          "user": 58,
+          "preferred_name": "Le",
+          "courses_active": [
+              1
+          ],
+          "courses_grading": [],
+          "courses_dropped": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 1,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "hpeter05",
+          "first_name": "Head",
+          "last_name": "Peterson",
+          "email": "hpeter05@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.415Z",
+          "groups": [3, 4],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 2,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "swalla07",
+          "first_name": "Snyder",
+          "last_name": "Wallace",
+          "email": "swalla07@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.421Z",
+          "groups": [2, 4],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 3,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "haguir08",
+          "first_name": "Hilda",
+          "last_name": "Aguirre",
+          "email": "haguir08@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.424Z",
+          "groups": [2, 4, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 4,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "chendr02",
+          "first_name": "Carson",
+          "last_name": "Hendrix",
+          "email": "chendr02@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.429Z",
+          "groups": [1, 3],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 5,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "gfitzg03",
+          "first_name": "Guerrero",
+          "last_name": "Fitzgerald",
+          "email": "gfitzg03@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.431Z",
+          "groups": [2, 4, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 6,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "jhays04",
+          "first_name": "Jarvis",
+          "last_name": "Hays",
+          "email": "jhays04@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.435Z",
+          "groups": [3],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 7,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "kpotte02",
+          "first_name": "Kaitlin",
+          "last_name": "Potter",
+          "email": "kpotte02@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.438Z",
+          "groups": [1],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 8,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "tdelac07",
+          "first_name": "Tammi",
+          "last_name": "Delacruz",
+          "email": "tdelac07@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.441Z",
+          "groups": [1, 4, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 9,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "hkelle01",
+          "first_name": "Holden",
+          "last_name": "Kelley",
+          "email": "hkelle01@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.446Z",
+          "groups": [2, 4],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 10,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "smonto09",
+          "first_name": "Savannah",
+          "last_name": "Montoya",
+          "email": "smonto09@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.448Z",
+          "groups": [1, 2, 4],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 11,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "kbaxte02",
+          "first_name": "Kathryn",
+          "last_name": "Baxter",
+          "email": "kbaxte02@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.453Z",
+          "groups": [2, 3, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 12,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "ljohns07",
+          "first_name": "Leblanc",
+          "last_name": "Johns",
+          "email": "ljohns07@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.455Z",
+          "groups": [1],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 13,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "sdunla09",
+          "first_name": "Scott",
+          "last_name": "Dunlap",
+          "email": "sdunla09@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.458Z",
+          "groups": [1, 3],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 14,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "jsanch03",
+          "first_name": "Jackson",
+          "last_name": "Sanchez",
+          "email": "jsanch03@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.461Z",
+          "groups": [2, 3, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 15,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "ddelga07",
+          "first_name": "Decker",
+          "last_name": "Delgado",
+          "email": "ddelga07@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.465Z",
+          "groups": [1, 3, 4, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 16,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "emanni09",
+          "first_name": "Eddie",
+          "last_name": "Manning",
+          "email": "emanni09@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.468Z",
+          "groups": [1, 2],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 17,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "tmarks09",
+          "first_name": "Tami",
+          "last_name": "Marks",
+          "email": "tmarks09@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.473Z",
+          "groups": [2, 4, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 18,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "dflore03",
+          "first_name": "Dena",
+          "last_name": "Flores",
+          "email": "dflore03@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.479Z",
+          "groups": [2],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 19,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "cjeffe02",
+          "first_name": "Camille",
+          "last_name": "Jefferson",
+          "email": "cjeffe02@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.485Z",
+          "groups": [2, 3],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 20,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "bcochr09",
+          "first_name": "Blanca",
+          "last_name": "Cochran",
+          "email": "bcochr09@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.490Z",
+          "groups": [2, 4],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 21,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "cjorda05",
+          "first_name": "Carpenter",
+          "last_name": "Jordan",
+          "email": "cjorda05@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.496Z",
+          "groups": [1],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 22,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "wcole01",
+          "first_name": "Williams",
+          "last_name": "Cole",
+          "email": "wcole01@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.499Z",
+          "groups": [4],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 23,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "charve03",
+          "first_name": "Chang",
+          "last_name": "Harvey",
+          "email": "charve03@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.501Z",
+          "groups": [4],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 24,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "lballa03",
+          "first_name": "Lowery",
+          "last_name": "Ballard",
+          "email": "lballa03@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.504Z",
+          "groups": [1, 2],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 25,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "dfarle05",
+          "first_name": "Deanne",
+          "last_name": "Farley",
+          "email": "dfarle05@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.508Z",
+          "groups": [5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 26,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "mreeve01",
+          "first_name": "Mathews",
+          "last_name": "Reeves",
+          "email": "mreeve01@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.511Z",
+          "groups": [4, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 27,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "sniels06",
+          "first_name": "Stacey",
+          "last_name": "Nielsen",
+          "email": "sniels06@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.515Z",
+          "groups": [4, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 28,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "bboone04",
+          "first_name": "Beasley",
+          "last_name": "Boone",
+          "email": "bboone04@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.519Z",
+          "groups": [1, 4, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 29,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "rpena06",
+          "first_name": "Rodgers",
+          "last_name": "Pena",
+          "email": "rpena06@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.524Z",
+          "groups": [4],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 30,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "cdanie01",
+          "first_name": "Chapman",
+          "last_name": "Daniel",
+          "email": "cdanie01@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.528Z",
+          "groups": [3],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 31,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "brios02",
+          "first_name": "Burgess",
+          "last_name": "Rios",
+          "email": "brios02@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.531Z",
+          "groups": [1, 2, 3],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 32,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "hjusti04",
+          "first_name": "Hensley",
+          "last_name": "Justice",
+          "email": "hjusti04@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.535Z",
+          "groups": [2, 3],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 33,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "hdelan02",
+          "first_name": "Harrington",
+          "last_name": "Delaney",
+          "email": "hdelan02@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.538Z",
+          "groups": [5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 34,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "ereese07",
+          "first_name": "Ethel",
+          "last_name": "Reese",
+          "email": "ereese07@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.541Z",
+          "groups": [5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 35,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "sgeorg06",
+          "first_name": "Sofia",
+          "last_name": "George",
+          "email": "sgeorg06@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.546Z",
+          "groups": [4],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 36,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "dhurst08",
+          "first_name": "Dolly",
+          "last_name": "Hurst",
+          "email": "dhurst08@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.548Z",
+          "groups": [2, 3, 4],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 37,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "bmayna08",
+          "first_name": "Burke",
+          "last_name": "Maynard",
+          "email": "bmayna08@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.551Z",
+          "groups": [2, 4],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 38,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "hcrawf07",
+          "first_name": "Hunt",
+          "last_name": "Crawford",
+          "email": "hcrawf07@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.555Z",
+          "groups": [3, 4],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 39,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "kmicha06",
+          "first_name": "Kathleen",
+          "last_name": "Michael",
+          "email": "kmicha06@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.558Z",
+          "groups": [1, 4],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 40,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "rhoust01",
+          "first_name": "Rios",
+          "last_name": "Houston",
+          "email": "rhoust01@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.563Z",
+          "groups": [1],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 41,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "fdotso05",
+          "first_name": "Fields",
+          "last_name": "Dotson",
+          "email": "fdotso05@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.565Z",
+          "groups": [5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 42,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "bwilki09",
+          "first_name": "Brennan",
+          "last_name": "Wilkins",
+          "email": "bwilki09@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.568Z",
+          "groups": [1, 3, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 43,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "jbond04",
+          "first_name": "Jillian",
+          "last_name": "Bond",
+          "email": "jbond04@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.571Z",
+          "groups": [2, 3],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 44,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "fmadde02",
+          "first_name": "Frederick",
+          "last_name": "Madden",
+          "email": "fmadde02@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.575Z",
+          "groups": [4, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 45,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "tmccul09",
+          "first_name": "Terry",
+          "last_name": "Mccullough",
+          "email": "tmccul09@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.578Z",
+          "groups": [2, 3, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 46,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "cthorn02",
+          "first_name": "Calhoun",
+          "last_name": "Thornton",
+          "email": "cthorn02@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.580Z",
+          "groups": [2, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 47,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "gnewma05",
+          "first_name": "Gordon",
+          "last_name": "Newman",
+          "email": "gnewma05@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.583Z",
+          "groups": [1, 3, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 48,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "rshann02",
+          "first_name": "Ruby",
+          "last_name": "Shannon",
+          "email": "rshann02@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.588Z",
+          "groups": [5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 49,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "cacost09",
+          "first_name": "Cabrera",
+          "last_name": "Acosta",
+          "email": "cacost09@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.590Z",
+          "groups": [3, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 50,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "jbean08",
+          "first_name": "Jennifer",
+          "last_name": "Bean",
+          "email": "jbean08@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.595Z",
+          "groups": [5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 51,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "mpatto05",
+          "first_name": "Moreno",
+          "last_name": "Patton",
+          "email": "mpatto05@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.598Z",
+          "groups": [3, 4, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 52,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "rpeck01",
+          "first_name": "Roxanne",
+          "last_name": "Peck",
+          "email": "rpeck01@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.602Z",
+          "groups": [2, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 53,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "ivilla09",
+          "first_name": "Iris",
+          "last_name": "Villarreal",
+          "email": "ivilla09@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.605Z",
+          "groups": [2, 4],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 54,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "pgalla02",
+          "first_name": "Pena",
+          "last_name": "Gallagher",
+          "email": "pgalla02@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.608Z",
+          "groups": [2, 3, 4],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 55,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "bburt03",
+          "first_name": "Beulah",
+          "last_name": "Burt",
+          "email": "bburt03@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.611Z",
+          "groups": [1, 3, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 56,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "darmst03",
+          "first_name": "Dale",
+          "last_name": "Armstrong",
+          "email": "darmst03@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.616Z",
+          "groups": [2],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 57,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "tferna01",
+          "first_name": "Tamera",
+          "last_name": "Fernandez",
+          "email": "tferna01@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.618Z",
+          "groups": [2],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 58,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": null,
+          "is_superuser": false,
+          "username": "lgarre04",
+          "first_name": "Leach",
+          "last_name": "Garrett",
+          "email": "lgarre04@eecs.tufts.edu",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2018-02-18T20:55:16.621Z",
+          "groups": [3, 5],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "auth.user",
+      "pk": 59,
+      "fields":
+      {
+          "password": "pbkdf2_sha256$36000$uZD37cR2RTcC$dMW4zVE7NSB11tHjHPn0C7IqpFYw/S29qpuOxlYBkdw=",
+          "last_login": "2018-03-02T01:19:54.604Z",
+          "is_superuser": true,
+          "username": "admin",
+          "first_name": "",
+          "last_name": "",
+          "email": "",
+          "is_staff": true,
+          "is_active": true,
+          "date_joined": "2018-01-22T20:48:10.804Z",
+          "groups": [],
+          "user_permissions": []
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 1,
+      "fields":
+      {
+          "display_name": "enim et",
+          "autograders": [],
+          "due_date": "2018-01-16T12:42:15+05:00",
+          "scorecards_published": true,
+          "is_published": false,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 6
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 2,
+      "fields":
+      {
+          "display_name": "pariatur esse",
+          "autograders": [],
+          "due_date": "2018-01-20T09:38:52+05:00",
+          "scorecards_published": false,
+          "is_published": false,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 1
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 3,
+      "fields":
+      {
+          "display_name": "enim eiusmod",
+          "autograders": [],
+          "due_date": "2018-01-06T03:10:02+05:00",
+          "scorecards_published": false,
+          "is_published": false,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 5
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 4,
+      "fields":
+      {
+          "display_name": "velit culpa",
+          "autograders": [],
+          "due_date": "2018-01-04T10:43:26+05:00",
+          "scorecards_published": false,
+          "is_published": true,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 3
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 5,
+      "fields":
+      {
+          "display_name": "sint labore",
+          "autograders": [],
+          "due_date": "2018-01-05T06:31:10+05:00",
+          "scorecards_published": false,
+          "is_published": true,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 6
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 6,
+      "fields":
+      {
+          "display_name": "ut deserunt",
+          "autograders": [],
+          "due_date": "2018-01-04T03:31:20+05:00",
+          "scorecards_published": true,
+          "is_published": true,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 2
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 7,
+      "fields":
+      {
+          "display_name": "est tempor",
+          "autograders": [],
+          "due_date": "2018-01-21T01:13:27+05:00",
+          "scorecards_published": false,
+          "is_published": true,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 2
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 8,
+      "fields":
+      {
+          "display_name": "officia culpa",
+          "autograders": [],
+          "due_date": "2018-01-20T05:30:26+05:00",
+          "scorecards_published": true,
+          "is_published": false,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 5
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 9,
+      "fields":
+      {
+          "display_name": "cupidatat quis",
+          "autograders": [],
+          "due_date": "2018-01-15T06:50:06+05:00",
+          "scorecards_published": true,
+          "is_published": false,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 1
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 10,
+      "fields":
+      {
+          "display_name": "aliquip elit",
+          "autograders": [],
+          "due_date": "2018-01-04T04:13:28+05:00",
+          "scorecards_published": true,
+          "is_published": false,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 1
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 11,
+      "fields":
+      {
+          "display_name": "eiusmod elit",
+          "autograders": [],
+          "due_date": "2018-01-18T10:19:11+05:00",
+          "scorecards_published": true,
+          "is_published": false,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 2
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 12,
+      "fields":
+      {
+          "display_name": "voluptate ea",
+          "autograders": [],
+          "due_date": "2018-01-21T08:19:29+05:00",
+          "scorecards_published": true,
+          "is_published": true,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 5
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 13,
+      "fields":
+      {
+          "display_name": "aliqua ea",
+          "autograders": [],
+          "due_date": "2018-01-14T08:31:06+05:00",
+          "scorecards_published": false,
+          "is_published": false,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 2
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 14,
+      "fields":
+      {
+          "display_name": "qui irure",
+          "autograders": [],
+          "due_date": "2018-01-17T09:01:10+05:00",
+          "scorecards_published": false,
+          "is_published": false,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 2
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 15,
+      "fields":
+      {
+          "display_name": "ullamco cupidatat",
+          "autograders": [],
+          "due_date": "2018-01-05T04:24:33+05:00",
+          "scorecards_published": false,
+          "is_published": true,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 2
+      }
+  },
+  {
+      "model": "core.assignment",
+      "pk": 16,
+      "fields":
+      {
+          "display_name": "est minim",
+          "autograders": [],
+          "due_date": "2018-01-07T03:07:28+05:00",
+          "scorecards_published": true,
+          "is_published": false,
+          "max_extensions": 2,
+          "accepting_submissions": true,
+          "course": 7
+      }
   }
 ]
