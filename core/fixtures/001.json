@@ -866,6 +866,7 @@
     "fields": {
       "first_name": "Head",
       "last_name": "Peterson",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcPetersonb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "hpeter05",
       "email": "hpeter05@eecs.tufts.edu",
       "groups": [
@@ -881,6 +882,7 @@
     "fields": {
       "first_name": "Snyder",
       "last_name": "Wallace",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcWallaceb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "swalla07",
       "email": "swalla07@eecs.tufts.edu",
       "groups": [
@@ -895,6 +897,7 @@
     "fields": {
       "first_name": "Hilda",
       "last_name": "Aguirre",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcAguirreb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "haguir08",
       "email": "haguir08@eecs.tufts.edu",
       "groups": [
@@ -911,6 +914,7 @@
     "fields": {
       "first_name": "Carson",
       "last_name": "Hendrix",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcHendrixb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "chendr02",
       "email": "chendr02@eecs.tufts.edu",
       "groups": [
@@ -925,6 +929,7 @@
     "fields": {
       "first_name": "Guerrero",
       "last_name": "Fitzgerald",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcFitzgeraldb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "gfitzg03",
       "email": "gfitzg03@eecs.tufts.edu",
       "groups": [
@@ -941,6 +946,7 @@
     "fields": {
       "first_name": "Jarvis",
       "last_name": "Hays",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcHaysb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "jhays04",
       "email": "jhays04@eecs.tufts.edu",
       "groups": [
@@ -954,6 +960,7 @@
     "fields": {
       "first_name": "Kaitlin",
       "last_name": "Potter",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcPotterb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "kpotte02",
       "email": "kpotte02@eecs.tufts.edu",
       "groups": [
@@ -967,6 +974,7 @@
     "fields": {
       "first_name": "Tammi",
       "last_name": "Delacruz",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcDelacruzb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "tdelac07",
       "email": "tdelac07@eecs.tufts.edu",
       "groups": [
@@ -983,6 +991,7 @@
     "fields": {
       "first_name": "Holden",
       "last_name": "Kelley",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcKelleyb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "hkelle01",
       "email": "hkelle01@eecs.tufts.edu",
       "groups": [
@@ -997,6 +1006,7 @@
     "fields": {
       "first_name": "Savannah",
       "last_name": "Montoya",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcMontoyab6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "smonto09",
       "email": "smonto09@eecs.tufts.edu",
       "groups": [
@@ -1013,6 +1023,7 @@
     "fields": {
       "first_name": "Kathryn",
       "last_name": "Baxter",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcBaxterb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "kbaxte02",
       "email": "kbaxte02@eecs.tufts.edu",
       "groups": [
@@ -1028,6 +1039,7 @@
     "fields": {
       "first_name": "Leblanc",
       "last_name": "Johns",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcJohnsb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "ljohns07",
       "email": "ljohns07@eecs.tufts.edu",
       "groups": [
@@ -1041,6 +1053,7 @@
     "fields": {
       "first_name": "Scott",
       "last_name": "Dunlap",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcDunlapb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "sdunla09",
       "email": "sdunla09@eecs.tufts.edu",
       "groups": [
@@ -1055,6 +1068,7 @@
     "fields": {
       "first_name": "Jackson",
       "last_name": "Sanchez",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcSanchezb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "jsanch03",
       "email": "jsanch03@eecs.tufts.edu",
       "groups": [
@@ -1071,6 +1085,7 @@
     "fields": {
       "first_name": "Decker",
       "last_name": "Delgado",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcDelgadob6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "ddelga07",
       "email": "ddelga07@eecs.tufts.edu",
       "groups": [
@@ -1087,6 +1102,7 @@
     "fields": {
       "first_name": "Eddie",
       "last_name": "Manning",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcManningb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "emanni09",
       "email": "emanni09@eecs.tufts.edu",
       "groups": [
@@ -1102,6 +1118,7 @@
     "fields": {
       "first_name": "Tami",
       "last_name": "Marks",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcMarksb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "tmarks09",
       "email": "tmarks09@eecs.tufts.edu",
       "groups": [
@@ -1118,6 +1135,7 @@
     "fields": {
       "first_name": "Dena",
       "last_name": "Flores",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcFloresb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "dflore03",
       "email": "dflore03@eecs.tufts.edu",
       "groups": [
@@ -1132,6 +1150,7 @@
     "fields": {
       "first_name": "Camille",
       "last_name": "Jefferson",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcJeffersonb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "cjeffe02",
       "email": "cjeffe02@eecs.tufts.edu",
       "groups": [
@@ -1147,6 +1166,7 @@
     "fields": {
       "first_name": "Blanca",
       "last_name": "Cochran",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcCochranb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "bcochr09",
       "email": "bcochr09@eecs.tufts.edu",
       "groups": [
@@ -1162,6 +1182,7 @@
     "fields": {
       "first_name": "Carpenter",
       "last_name": "Jordan",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcJordanb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "cjorda05",
       "email": "cjorda05@eecs.tufts.edu",
       "groups": [
@@ -1175,6 +1196,7 @@
     "fields": {
       "first_name": "Williams",
       "last_name": "Cole",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcColeb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "wcole01",
       "email": "wcole01@eecs.tufts.edu",
       "groups": [
@@ -1188,6 +1210,7 @@
     "fields": {
       "first_name": "Chang",
       "last_name": "Harvey",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcHarveyb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "charve03",
       "email": "charve03@eecs.tufts.edu",
       "groups": [
@@ -1201,6 +1224,7 @@
     "fields": {
       "first_name": "Lowery",
       "last_name": "Ballard",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcBallardb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "lballa03",
       "email": "lballa03@eecs.tufts.edu",
       "groups": [
@@ -1216,6 +1240,7 @@
     "fields": {
       "first_name": "Deanne",
       "last_name": "Farley",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcFarleyb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "dfarle05",
       "email": "dfarle05@eecs.tufts.edu",
       "groups": [
@@ -1229,6 +1254,7 @@
     "fields": {
       "first_name": "Mathews",
       "last_name": "Reeves",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcReevesb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "mreeve01",
       "email": "mreeve01@eecs.tufts.edu",
       "groups": [
@@ -1244,6 +1270,7 @@
     "fields": {
       "first_name": "Stacey",
       "last_name": "Nielsen",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcNielsenb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "sniels06",
       "email": "sniels06@eecs.tufts.edu",
       "groups": [
@@ -1259,6 +1286,7 @@
     "fields": {
       "first_name": "Beasley",
       "last_name": "Boone",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcBooneb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "bboone04",
       "email": "bboone04@eecs.tufts.edu",
       "groups": [
@@ -1275,6 +1303,7 @@
     "fields": {
       "first_name": "Rodgers",
       "last_name": "Pena",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcPenab6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "rpena06",
       "email": "rpena06@eecs.tufts.edu",
       "groups": [
@@ -1290,6 +1319,7 @@
     "fields": {
       "first_name": "Chapman",
       "last_name": "Daniel",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcDanielb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "cdanie01",
       "email": "cdanie01@eecs.tufts.edu",
       "groups": [
@@ -1303,6 +1333,7 @@
     "fields": {
       "first_name": "Burgess",
       "last_name": "Rios",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcRiosb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "brios02",
       "email": "brios02@eecs.tufts.edu",
       "groups": [
@@ -1319,6 +1350,7 @@
     "fields": {
       "first_name": "Hensley",
       "last_name": "Justice",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcJusticeb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "hjusti04",
       "email": "hjusti04@eecs.tufts.edu",
       "groups": [
@@ -1334,6 +1366,7 @@
     "fields": {
       "first_name": "Harrington",
       "last_name": "Delaney",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcDelaneyb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "hdelan02",
       "email": "hdelan02@eecs.tufts.edu",
       "groups": [
@@ -1347,6 +1380,7 @@
     "fields": {
       "first_name": "Ethel",
       "last_name": "Reese",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcReeseb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "ereese07",
       "email": "ereese07@eecs.tufts.edu",
       "groups": [
@@ -1361,6 +1395,7 @@
     "fields": {
       "first_name": "Sofia",
       "last_name": "George",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcGeorgeb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "sgeorg06",
       "email": "sgeorg06@eecs.tufts.edu",
       "groups": [
@@ -1374,6 +1409,7 @@
     "fields": {
       "first_name": "Dolly",
       "last_name": "Hurst",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcHurstb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "dhurst08",
       "email": "dhurst08@eecs.tufts.edu",
       "groups": [
@@ -1389,6 +1425,7 @@
     "fields": {
       "first_name": "Burke",
       "last_name": "Maynard",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcMaynardb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "bmayna08",
       "email": "bmayna08@eecs.tufts.edu",
       "groups": [
@@ -1404,6 +1441,7 @@
     "fields": {
       "first_name": "Hunt",
       "last_name": "Crawford",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcCrawfordb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "hcrawf07",
       "email": "hcrawf07@eecs.tufts.edu",
       "groups": [
@@ -1418,6 +1456,7 @@
     "fields": {
       "first_name": "Kathleen",
       "last_name": "Michael",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcMichaelb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "kmicha06",
       "email": "kmicha06@eecs.tufts.edu",
       "groups": [
@@ -1434,6 +1473,7 @@
     "fields": {
       "first_name": "Rios",
       "last_name": "Houston",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcHoustonb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "rhoust01",
       "email": "rhoust01@eecs.tufts.edu",
       "groups": [
@@ -1447,6 +1487,7 @@
     "fields": {
       "first_name": "Fields",
       "last_name": "Dotson",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcDotsonb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "fdotso05",
       "email": "fdotso05@eecs.tufts.edu",
       "groups": [
@@ -1460,6 +1501,7 @@
     "fields": {
       "first_name": "Brennan",
       "last_name": "Wilkins",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcWilkinsb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "bwilki09",
       "email": "bwilki09@eecs.tufts.edu",
       "groups": [
@@ -1475,6 +1517,7 @@
     "fields": {
       "first_name": "Jillian",
       "last_name": "Bond",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcBondb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "jbond04",
       "email": "jbond04@eecs.tufts.edu",
       "groups": [
@@ -1490,6 +1533,7 @@
     "fields": {
       "first_name": "Frederick",
       "last_name": "Madden",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcMaddenb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "fmadde02",
       "email": "fmadde02@eecs.tufts.edu",
       "groups": [
@@ -1504,6 +1548,7 @@
     "fields": {
       "first_name": "Terry",
       "last_name": "Mccullough",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcMcculloughb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "tmccul09",
       "email": "tmccul09@eecs.tufts.edu",
       "groups": [
@@ -1519,6 +1564,7 @@
     "fields": {
       "first_name": "Calhoun",
       "last_name": "Thornton",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcThorntonb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "cthorn02",
       "email": "cthorn02@eecs.tufts.edu",
       "groups": [
@@ -1533,6 +1579,7 @@
     "fields": {
       "first_name": "Gordon",
       "last_name": "Newman",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcNewmanb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "gnewma05",
       "email": "gnewma05@eecs.tufts.edu",
       "groups": [
@@ -1549,6 +1596,7 @@
     "fields": {
       "first_name": "Ruby",
       "last_name": "Shannon",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcShannonb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "rshann02",
       "email": "rshann02@eecs.tufts.edu",
       "groups": [
@@ -1562,6 +1610,7 @@
     "fields": {
       "first_name": "Cabrera",
       "last_name": "Acosta",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcAcostab6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "cacost09",
       "email": "cacost09@eecs.tufts.edu",
       "groups": [
@@ -1576,6 +1625,7 @@
     "fields": {
       "first_name": "Jennifer",
       "last_name": "Bean",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcBeanb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "jbean08",
       "email": "jbean08@eecs.tufts.edu",
       "groups": [
@@ -1589,6 +1639,7 @@
     "fields": {
       "first_name": "Moreno",
       "last_name": "Patton",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcPattonb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "mpatto05",
       "email": "mpatto05@eecs.tufts.edu",
       "groups": [
@@ -1605,6 +1656,7 @@
     "fields": {
       "first_name": "Roxanne",
       "last_name": "Peck",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcPeckb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "rpeck01",
       "email": "rpeck01@eecs.tufts.edu",
       "groups": [
@@ -1619,6 +1671,7 @@
     "fields": {
       "first_name": "Iris",
       "last_name": "Villarreal",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcVillarrealb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "ivilla09",
       "email": "ivilla09@eecs.tufts.edu",
       "groups": [
@@ -1633,6 +1686,7 @@
     "fields": {
       "first_name": "Pena",
       "last_name": "Gallagher",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcGallagherb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "pgalla02",
       "email": "pgalla02@eecs.tufts.edu",
       "groups": [
@@ -1648,6 +1702,7 @@
     "fields": {
       "first_name": "Beulah",
       "last_name": "Burt",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcBurtb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "bburt03",
       "email": "bburt03@eecs.tufts.edu",
       "groups": [
@@ -1664,6 +1719,7 @@
     "fields": {
       "first_name": "Dale",
       "last_name": "Armstrong",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcArmstrongb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "darmst03",
       "email": "darmst03@eecs.tufts.edu",
       "groups": [
@@ -1677,6 +1733,7 @@
     "fields": {
       "first_name": "Tamera",
       "last_name": "Fernandez",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcFernandezb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "tferna01",
       "email": "tferna01@eecs.tufts.edu",
       "groups": [
@@ -1690,6 +1747,7 @@
     "fields": {
       "first_name": "Leach",
       "last_name": "Garrett",
+      "password": "pbkdf2_sha256$fUJtP2oSvYKcGarrettb6Bwqyrr4XkU6mVqRodlZncM6mEAJTCghlmBXVHfFU=",
       "username": "lgarre04",
       "email": "lgarre04@eecs.tufts.edu",
       "groups": [
