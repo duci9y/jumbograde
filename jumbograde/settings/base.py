@@ -76,8 +76,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'jumbograde_test',
-        'USER': '',
-        'PASSWORD': '',
+        'USER': 'postgres',
+        'PASSWORD': ' ',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -123,3 +123,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 from jumbograde.settings.ldap import *
+
+LOGIN_REDIRECT_URL = '/grade'

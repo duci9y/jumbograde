@@ -1,22 +1,21 @@
 {% extends 'layout.html.j2' %}
 {% block head %}
-<link rel="stylesheet" href="{{ static('core/courses.css') }}">
 {% endblock %}
 
 {% block body %}
-<div class="container">
+<div class="container pt-4">
   <div class="row">
     <div class="col-sm">
-      <div class="card text-center mx-auto" id="course_select">
+      <div class="card text-center mx-auto">
         <div class="card-header">
           <strong>Welcome to JumboGrade!</strong>
         </div>
         <div class="card-block"><br>
           <p class="card-text">Which class would you like to view?<p>
           {% for course in object_list %}
-            <a class="btn btn-light course" href="{{ url('assignment_list', kwargs={'course_number': course.course_number}) }}" role="button">{{ course }}</a><br>       
+            <a class="btn btn-light course border w-50 m-1" href="{{ url('assignment_list', kwargs={'course_number': course.course_number}) }}" role="button">{{ course }}</a><br>
           {% endfor %}
-          <a class="btn btn-light logout" href="../login" role="button">Logout</a>
+          <a class="btn btn-light px-4 border m-1" href="../login" role="button">Logout</a>
         </div>
       </div>
     </div>

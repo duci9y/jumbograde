@@ -84,7 +84,7 @@ class Scorecard(TimestampsModel):
 class Submission(TimestampsModel):
     student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='submissions')
     assignment = models.ForeignKey(Assignment, on_delete=models.CASCADE, related_name='submissions')
-    # is_late 
+    # is_late
     latest_version = models.PositiveSmallIntegerField(default=0)
     # TODO: Figure out if this is ok
     path = models.CharField(max_length=100)
