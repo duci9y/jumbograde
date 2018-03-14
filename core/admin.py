@@ -13,12 +13,12 @@ class StudentAdmin(admin.ModelAdmin):
 
     list_display = ('username', 'preferred_name', 'first_name', 'last_name',)
 
-class ScorecardTemplateInline(admin.TabularInline):
-    model = models.ScorecardTemplate
+class ScorecardFormatInline(admin.TabularInline):
+    model = models.ScorecardFormat
 
 class AssignmentAdmin(admin.ModelAdmin):
     inlines = [
-        ScorecardTemplateInline,
+        ScorecardFormatInline,
     ]
     
     list_display = ('display_name', 'due_date', 'scorecards_published', 'is_published',

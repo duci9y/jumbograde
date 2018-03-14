@@ -55,9 +55,9 @@ class Assignment(models.Model):
         return self.display_name
 
 
-class ScorecardTemplate(models.Model):
+class ScorecardFormat(models.Model):
     # TODO: Think more
-    assignment = models.OneToOneField(Assignment, related_name='scorecard_template', on_delete=models.CASCADE)
+    assignment = models.OneToOneField(Assignment, related_name='scorecard_format', on_delete=models.CASCADE)
     data = JSONField()
 
 
