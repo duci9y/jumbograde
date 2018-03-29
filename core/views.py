@@ -1,8 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views import View
 from django.views.generic.list import ListView
 from core.models import Course, Assignment
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.core.urlresolvers import reverse
 
 # Using class based views
 class CourseList(LoginRequiredMixin, ListView):
@@ -10,10 +11,10 @@ class CourseList(LoginRequiredMixin, ListView):
     login_url = '/login/'
     redirect_field_name = 'redirect_to'
 
+
     def get_queryset(self):
-        #return Course.objects.filter(course__grader_posix_group=)
-        print(self.kwargs)
-        return Course.objects.order_by('course_number')
+        user_groups = self.request.user.groups.values_list('id', flat=True)
+        return Course.objects.filter(grader_posix_group__in=user_groups)
 
 class AssignmentList(LoginRequiredMixin, ListView):
     template_name = 'core/assignments.html.j2'
@@ -27,3 +28,10 @@ class AssignmentList(LoginRequiredMixin, ListView):
 
     def get_queryset(self):
         return Assignment.objects.filter(course__course_number=self.kwargs['course_number']).order_by('display_name')
+
+    def dispatch(self, request, *args, **kwargs):
+        course = get_object_or_404(Course, course_number=self.kwargs['course_number'])
+
+        if course.grader_posix_group not in self.request.user.groups.all():
+            return redirect(reverse('course_list'))
+        return super(AssignmentList, self).dispatch(request, *args, **kwargs)
