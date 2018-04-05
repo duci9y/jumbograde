@@ -15,7 +15,7 @@
           {% for course in object_list %}
             <a class="btn btn-light course border w-50 m-1" href="{{ url('assignment_list', kwargs={'course_number': course.course_number}) }}" role="button">{{ course }}</a><br>
           {% endfor %}
-          <a class="btn btn-light px-4 border m-1" href="../login" role="button">Logout</a>
+          <a class="btn btn-light px-4 border m-1" href="{{url('login')}}" role="button">Logout</a>
         </div>
       </div>
     </div>
