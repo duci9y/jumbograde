@@ -25,7 +25,7 @@ class Course(models.Model):
 
 
 class Student(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='student')
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     preferred_name = models.CharField(max_length=32)
     courses_active = models.ManyToManyField(Course, related_name='students', blank=True)
     courses_grading = models.ManyToManyField(Course, related_name='graders', blank=True)
@@ -69,7 +69,6 @@ class Extension(models.Model):
     student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='extensions')
 
 
-<<<<<<< HEAD
 class Scorecard(TimestampsModel):
     id = HashidAutoField('ID',
                          primary_key=True,
@@ -82,8 +81,6 @@ class Scorecard(TimestampsModel):
     assignment = models.ForeignKey(Assignment, on_delete=models.CASCADE, related_name='scorecards')
     # TODO: link to submission
 
-=======
->>>>>>> models
 class Submission(TimestampsModel):
     student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='submissions')
     assignment = models.ForeignKey(Assignment, on_delete=models.CASCADE, related_name='submissions')
@@ -91,18 +88,6 @@ class Submission(TimestampsModel):
     latest_version = models.PositiveSmallIntegerField(default=0)
     # TODO: Figure out if this is ok
     path = models.CharField(max_length=100)
-
-
-class Scorecard(TimestampsModel):
-    id = HashidAutoField('ID',
-                         primary_key=True,
-                         min_length=8,
-                         allow_int=False,
-                         alphabet='abcdefghijklmnopqrstuvwxyz0123456789',)
-    grader = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='scorecards_graded')
-    data = JSONField()
-    is_done = models.BooleanField(default=False)
-    submission = models.OneToOneField(Submission, on_delete=models.CASCADE, related_name='scorecard')
 
 
 class Event(TimestampsModel):
