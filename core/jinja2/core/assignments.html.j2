@@ -15,7 +15,7 @@
           {% for assignment in assignment_list %}
             <a class="btn btn-light course border w-25 m-1" href="{{ url('scoring_view', kwargs={'course_number': assignment.course.course_number, 'assignment_name': assignment.display_name}) }}" role="button">{{ assignment }}</a><br>
           {% endfor %}
-          <a class="btn btn-light px-5 border m-1" href="{{url('course_list')}}" role="button">Back</a>
+          <a class="btn btn-light px-5 border m-1" href="../" role="button">Back</a>
         </div>
       </div>
     </div>
