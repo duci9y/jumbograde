@@ -10,3 +10,5 @@ SECRET_KEY = 'x90p^6mxt(v3tj_4&cfbei9gn(5vm056-6s(#y97eycr8**nm$'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+
+SUBMISSION_DIR = '/Users/deepanshu/Documents/Developer/jumbograde/'
