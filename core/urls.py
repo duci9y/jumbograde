@@ -7,6 +7,8 @@ urlpatterns = [
     url('', include('django.contrib.auth.urls')),
     url(r'^test_endpoint/$', TemplateView.as_view(template_name='core/test.html.j2')),
     url(r'^courses/$', TemplateView.as_view(template_name='core/courses.html.j2')),
-    url(r'view_grades/$', AssignmentStudentView.as_view()),
-    url(r'^view_scorecard/', ScorecardStudentView.as_view())
+    url(r'^view_grades/$', AssignmentStudentView.as_view(), name='view_grades'),
+    #url(r'^view_scorecard/', ScorecardStudentView.as_view()),
+    url(r'^view_grades/(?P<course_number>[a-zA-Z0-9\s]+)/(?P<assignment_name>[a-zA-Z0-9\s]+)/$', ScorecardStudentView.as_view(), name='view_scorecard')
+
 ]

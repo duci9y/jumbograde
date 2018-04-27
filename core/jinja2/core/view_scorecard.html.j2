@@ -1,33 +1,67 @@
 {% extends 'layout.html.j2' %}
+
 {% block head %}
 <link rel="stylesheet" href="{{ static('core/view_scorecard.css') }}">
 {% endblock %}
 
 {% block body %}
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th scope="col">Function</th>
-      <th scope="col">Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for group in scorecard %}
-    {% for section in group.sections %}
-    <tr>
-      <td>
-          {{section.section_name}} <br>
-          {% for item in section['items'] %}
-          {{item.description}} {{item.points_received}} / {{item.points_max}}
-          {% endfor %}
-
-      </td>
-      <td>
-          {{section.comments}}
-      </td>
-    </tr>
-    {% endfor %}
-    {% endfor %}
-  </tbody>
-</table>
+<div class="container-fluid">
+    <div class="row justify-content-md-center">
+        <div class="col-sm-8">
+            <a class="btn btn-primary" href="{{ url('view_grades')}}" role="button">Back</a>
+            <div class="card">
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Function</th>
+                                <th scope="col">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for group in scorecard.groups %}
+                            {% for section in group.sections %}
+                            <tr>
+                                <td>
+                                    <strong>
+                                    {{section.section_name}}
+                                    {{section.section_received}} / {{section.section_max}}
+                                    </strong>
+                                    <br>
+                                    {% for item in section['items'] %}
+                                    
+                                      {{item.description}}
+                                      {{item.points_received}} / {{item.points_max}}
+                               
+                                    <br>
+                                    {% endfor %}
+                                </td>
+                                <td>
+                                    {{section.comments}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  <strong> Total </strong> <span> <strong> {{scorecard.total_received}} / {{scorecard.total_max}}</strong> </span>
+                                    
+                                </td>
+                                <td>
+                                    <strong>{{scorecard.total_percentage}}%</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                  <strong> Summary </strong> <br>
+                                    {{ scorecard.comments }}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
