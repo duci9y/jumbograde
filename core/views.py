@@ -7,8 +7,8 @@ from django.views.generic.base import RedirectView
 from core.models import Course, Assignment, Scorecard, Submission
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.urlresolvers import reverse
+from django.http import Http404
 
-# Using class based views
 class CourseList(LoginRequiredMixin, ListView):
     template_name = 'core/courses.html.j2'
     login_url = '/login/'
@@ -17,6 +17,7 @@ class CourseList(LoginRequiredMixin, ListView):
     def get_queryset(self):
         user_groups = self.request.user.groups.values_list('id', flat=True)
         return Course.objects.filter(grader_posix_group__in=user_groups)
+
 
 class AssignmentList(LoginRequiredMixin, ListView):
     template_name = 'core/assignments.html.j2'
@@ -42,62 +43,22 @@ class AssignmentList(LoginRequiredMixin, ListView):
 
 class ScorecardView(LoginRequiredMixin, DetailView):
     login_url = '/login/'
-    redirect_filed_name = 'redirect_to'
+    model = Scorecard
+    template_name = 'core/scorecard.html.j2'
+    context_object_name = 'scorecard'
 
-    def get(self, request):
-        scorecard = [
-            {
-                "group_name": "name",
-                "sections": [
-                    {
-                        "section_name": "patient",
-                        "items": [
-                            {
-                                "description": "calc prior",
-                                "points": 4
-                            },
-                            {
-                                "description": "comp op blah blah here are words to test things on multiple lines hello hello",
-                                "points": 8
-                            },
-                            {
-                                "description": "something",
-                                "points": 12
-                            }
-                        ]
-                    },
-                    {
-                        "section_name": "minheap",
-                        "items": [
-                            {
-                                "description": "heapify",
-                                "points": 2
-                            }
-                        ]
-                    },
-                    {
-                        "section_name": "maxheap",
-                        "items": [
-                            {
-                                "description": "extract",
-                                "points": 6
-                            },
-                            {
-                                "description": "insert",
-                                "points": 4
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+    def get_object(self, queryset=None):
+        scorecard = get_object_or_404(Scorecard, id=self.kwargs.get('scorecard_id'))
 
-        context = {
-            'scorecard' : scorecard,
-        }
-        return render(request, 'core/scorecard.html.j2', context)
+        if (scorecard.submission.assignment.display_name != self.kwargs.get('assignment_name') or
+            scorecard.submission.assignment.course.course_number != self.kwargs.get('course_number')):
+            raise Http404('Invalid route to scorecard.')
+
+        return scorecard
+
 
 class ScorecardRedirectView(LoginRequiredMixin, RedirectView):
+    login_url = '/login/'
     permanent = False
 
     def get_redirect_url(self, *args, **kwargs):
@@ -132,4 +93,3 @@ class ScorecardRedirectView(LoginRequiredMixin, RedirectView):
 
         else:
             return 'google.com'
-

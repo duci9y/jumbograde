@@ -13,7 +13,7 @@
           <strong>Grading [Assignment] for [student]</strong>
         </div>
         <div class="card-block"><br>
-          {% for group in scorecard %}
+          {% for group in scorecard.data %}
           {% for section in group.sections %}
             <div class="row section">
               <div class="descrip col-sm">
