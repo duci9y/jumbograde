@@ -1,5 +1,5 @@
 from celery import shared_task
-from core.models import Course, Assignment, Submission
+from core.models import Course, Assignment, Submission, Student
 from django.conf import settings
 import os
 
@@ -14,10 +14,14 @@ def poll_for_new_submissions():
             path = os.path.join(settings.SUBMISSION_DIR,
                                 course.course_number,
                                 course.semester,
-                                '/grading/',
+                                'grading',
                                 assignment.display_name)
 
-            submission_dirs = next(os.walk(path), [])[1]
+            print('Reading path ' + path)
+
+            submission_dirs = next(os.walk(path), [None, []])[1]
+
+            print('Reading assignment at ' + str(submission_dirs))
 
             for dir_name in submission_dirs:
                 # check if any submission exists in db

@@ -1,3 +1,4 @@
+import random
 from django.shortcuts import render, get_object_or_404
 from django.views import View
 from django.views.generic.list import ListView
@@ -40,7 +41,6 @@ class ScorecardRedirectView(LoginRequiredMixin, RedirectView):
         # - If yes, create new scorecard and return
         # - If not, done! redirect to... done...?
         assignment = get_object_or_404(Assignment, display_name=kwargs.get('assignment_name'))
-
         unfinished_set = Scorecard.objects.filter(grader=self.request.user.student,
                                                   submission__assignment=assignment,
                                                   is_done=False)
@@ -49,24 +49,21 @@ class ScorecardRedirectView(LoginRequiredMixin, RedirectView):
                                                  scorecard=None)
 
         if unfinished_set.count() > 0:
-            return pick_unfinished(unfinished_set)
+            scorecard = unfinished_set.first()
+            return reverse('scorecard-detail', kwargs=dict(kwargs, scorecard_id=scorecard.id))
+
         elif ungraded_set.count() > 0:
             # TODO: RACE CONDITION? multiple queries?
-            return pick_ungraded(ungraded_set)
+            submission = random.choice(ungraded_set.all())
+
+            scorecard = Scorecard()
+            scorecard.grader = self.request.user.student
+            scorecard.submission = submission
+            scorecard.data = assignment.scorecard_template.data
+            scorecard.save()
+
+            return reverse('scorecard-detail', kwargs=dict(kwargs, scorecard_id=scorecard.id))
+
         else:
             return 'google.com'
 
-    def pick_unfinished(unfinished_set):
-        scorecard = unfinished_set.first()
-        return reverse('scorecard-detail', **kwargs, scorecard_id=scorecard.id)
-
-    def pick_ungraded(ungraded_set):
-        submission = ungraded_set.all()[rand() % ungraded_set.count()]
-
-        scorecard = Scorecard()
-        scorecard.grader = self.request.user
-        scorecard.submission = submission
-        scorecard.data = assignment.scorecard_template.data
-        scorecard.save()
-
-        return reverse('scorecard-detail', **kwargs, scorecard_id=scorecard.id)

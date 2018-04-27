@@ -1979,5 +1979,853 @@
       "accepting_submissions": true,
       "course": 7
     }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 1,
+    "fields": {
+      "assignment": 1,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 2,
+    "fields": {
+      "assignment": 2,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 3,
+    "fields": {
+      "assignment": 3,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 4,
+    "fields": {
+      "assignment": 4,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 5,
+    "fields": {
+      "assignment": 5,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 6,
+    "fields": {
+      "assignment": 6,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 7,
+    "fields": {
+      "assignment": 7,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 8,
+    "fields": {
+      "assignment": 8,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 9,
+    "fields": {
+      "assignment": 9,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 10,
+    "fields": {
+      "assignment": 10,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 11,
+    "fields": {
+      "assignment": 11,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 12,
+    "fields": {
+      "assignment": 12,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 13,
+    "fields": {
+      "assignment": 13,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 14,
+    "fields": {
+      "assignment": 14,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 15,
+    "fields": {
+      "assignment": 15,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "model": "core.scorecardtemplate",
+    "pk": 16,
+    "fields": {
+      "assignment": 16,
+      "data": [
+        {
+          "group_name": "name",
+          "sections": [
+            {
+              "section_name": "patient",
+              "items": [
+                {
+                  "description": "calc prior",
+                  "points": 4
+                },
+                {
+                  "description": "comp op blah blah here are words to test things on multiple lines hello hello",
+                  "points": 8
+                },
+                {
+                  "description": "something",
+                  "points": 12
+                }
+              ]
+            },
+            {
+              "section_name": "minheap",
+              "items": [
+                {
+                  "description": "heapify",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "section_name": "maxheap",
+              "items": [
+                {
+                  "description": "extract",
+                  "points": 6
+                },
+                {
+                  "description": "insert",
+                  "points": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   }
 ]

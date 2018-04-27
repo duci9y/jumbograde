@@ -1,3 +1,4 @@
+import os
 from .base import *
 
 # Quick-start development settings - unsuitable for production
@@ -11,4 +12,4 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-SUBMISSION_DIR = '/Users/deepanshu/Documents/Developer/jumbograde/'
+SUBMISSION_DIR = os.environ.get('SUBMISSION_DIR')
