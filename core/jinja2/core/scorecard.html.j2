@@ -1,0 +1,62 @@
+{% extends 'layout.html.j2' %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ static('core/scorecard.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div class="container pt-4">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card mx-auto">
+        <div class="text-center card-header">
+          <strong>Grading [Assignment] for [student]</strong>
+        </div>
+        <div class="card-block"><br>
+          {% for group in scorecard %}
+          {% for section in group.sections %}
+            <div class="row section">
+              <div class="descrip col-sm">
+                <div class="form-group row s_title">
+                  <label for="{{section.section_name}}" class="col-sm-8 col-form-label">{{section.section_name}}</label>
+                  <div class="col-sm-2">
+                    <input type="number" class="form-control" id="{{section.section_name}}">
+                  </div>
+                  <div class="col-sm-2">/ t pts</div>
+                </div>
+                <form>
+                  {% for item in section['items'] %}
+                    <div class="form-group row">
+                      <label for="{{item.description}}" class="col-sm-8 col-form-label">{{item.description}}</label>
+                      <div class="col-sm-2">
+                        <input type="number" class="form-control" id="{{item.description}}">
+                      </div>
+                      <div class="col-sm-2">/ {{item.points}}</div>
+                    </div>
+                  {% endfor %}
+                </form>
+              </div>
+              <div class="col-sm form-group">
+                <textarea class="comments form-control" rows="5"></textarea>
+              </div>
+            </div>
+          {% endfor %}
+          {% endfor %}
+          <div class="row section">
+            <p class="s_title">Summary</p>
+            <div class="col-sm form-group">
+              <textarea class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<button type="button" class="btn btn-default">Save & Exit</button>
+<button type="button" class="btn btn-default">Save & Submit</button>
+
+
+
+
+{% endblock %}

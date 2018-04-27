@@ -1,0 +1,12 @@
+.descrip, .comments {
+  border: 1px solid;
+  padding-left: 2rem;
+}
+
+.s_title {
+  font-weight: bold;
+}
+
+.comments {
+  height: 100%;
+}
